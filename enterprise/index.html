@@ -1,188 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Enterprise Trusted AI — BusinessDigital AI</title>
-<meta name="description" content="Your company's AI data may already be reachable by the US government. We give European enterprises a legally certified open-source AI that stays on French soil — with state-funded training and zero upfront cost.">
-<meta property="og:title" content="Enterprise Trusted AI — BusinessDigital AI">
-<meta property="og:description" content="Your company's AI data may already be reachable by the US government. We give European enterprises a legally certified open-source AI that stays on French soil — with state-funded training and zero upfront cost.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://businessdigitalai.com/enterprise">
-<meta name="robots" content="index, follow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trusted AI in 3 steps: free audit, funded training, sovereign hosting in France | BusinessDigital AI</title>
+<meta name="description" content="Get your own trusted, secure, open-source AI hosted in France, beyond the reach of the Patriot Act and Cloud Act. Free audit, fully funded training, hosting in France, up to 80% lower AI costs.">
 <link rel="canonical" href="https://businessdigitalai.com/enterprise">
+<meta property="og:title" content="Enterprise Trusted AI — BusinessDigital AI">
+<meta property="og:description" content="Free audit, state-funded training, open-source AI hosted on French soil. Cloud Act and EU AI Act compliant.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/shared.css">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0E1B2A;--ink-2:#16283D;--ink-soft:#22364F;--ivory:#F5F3ED;--ivory-2:#EFEBE1;--brass:#A9843C;--brass-soft:#C9A863;--paper:#FBFAF6;--line:rgba(14,27,42,.14);--muted:#54627A;--ok:#2F6F5E;--wa:#25D366}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Spectral',Georgia,serif;font-weight:600;line-height:1.14;letter-spacing:-.01em}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--brass);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--brass)}
+a{color:inherit}.inl{text-decoration:none;border-bottom:1px solid var(--brass)}
+
+/* Nav */
+nav{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:100;padding:.7rem 0}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.nav-logo{font-family:'Spectral',serif;font-weight:700;font-size:1.1rem;color:var(--ink);text-decoration:none}
+.nav-links{display:flex;align-items:center;gap:1.75rem;list-style:none}
+.nav-links a{text-decoration:none;font-size:.875rem;font-weight:500;color:var(--muted)}
+.nav-links a:hover{color:var(--ink)}
+.nav-wa{display:inline-flex;align-items:center;gap:.5rem;background:var(--wa);color:#fff;padding:.45rem 1.1rem;border-radius:2px;font-weight:600;font-size:.85rem;text-decoration:none}
+.nav-wa:hover{background:#1ebe5d}
+
+/* Buttons */
+.btn{display:inline-block;font-weight:600;font-size:15px;padding:14px 26px;border-radius:2px;text-decoration:none;transition:.18s ease;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.btn-dark{background:var(--ink);color:var(--ivory);border-color:var(--ink)}.btn-dark:hover{background:var(--ink-2)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}.btn-ghost:hover{border-color:var(--ink)}
+.btn-brass{background:var(--brass);color:#1a1206;border-color:var(--brass)}.btn-brass:hover{background:var(--brass-soft)}
+.btn-wa{background:var(--wa);color:#fff;border-color:var(--wa);display:inline-flex;align-items:center;gap:.6rem}.btn-wa:hover{background:#1ebe5d}
+.btn-wa svg{flex-shrink:0}
+
+/* Hero */
+.hero{background:var(--ink);color:var(--ivory);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 90% at 85% -10%,rgba(169,132,60,.16),transparent 55%);pointer-events:none}
+.hero .wrap{padding:70px 24px 78px;position:relative;z-index:1}
+.hero .eyebrow{color:var(--brass-soft)}.hero .eyebrow::before{background:var(--brass-soft)}
+.hero h1{font-size:clamp(33px,5.1vw,54px);margin:22px 0 0;max-width:15ch;color:#fff}
+.hero p.lead{font-size:clamp(16.5px,2.1vw,19px);color:#C9D2DF;max-width:52ch;margin:22px 0 34px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.hero .btn-ghost{color:var(--ivory);border-color:rgba(245,243,237,.3)}.hero .btn-ghost:hover{border-color:var(--ivory)}
+.trust{margin-top:40px;padding-top:26px;border-top:1px solid rgba(245,243,237,.14);display:flex;flex-wrap:wrap;gap:26px 40px;font-size:13.5px;color:#9FB0C4}
+.trust b{color:#E7ECF3;font-weight:600}
+
+/* Sections */
+.sec{padding:76px 0}
+.sec h2{font-size:clamp(26px,3.6vw,38px);max-width:22ch}
+.lede{font-size:19px;color:var(--ink-soft);max-width:60ch;line-height:1.72;margin-top:26px}
+.lede+.lede{margin-top:20px}
+
+/* Diagram */
+.diagram{background:var(--ivory);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.diagram .wrap{padding:64px 24px;display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.diagram h2{font-size:clamp(24px,3.2vw,32px)}
+.diagram p{color:var(--muted);margin:16px 0 0;max-width:44ch}
+svg{width:100%;height:auto;display:block}
+
+/* Steps grid */
+.journey{background:var(--ivory);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.jgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px}
+.jcard{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--brass);border-radius:2px;padding:26px 22px;display:flex;flex-direction:column}
+.jcard .num{font-family:'Spectral',serif;font-size:22px;color:var(--brass);font-weight:600;margin-bottom:6px}
+.jcard .zero{font-size:12.5px;font-weight:700;color:var(--ok);text-transform:uppercase;letter-spacing:.07em;margin-bottom:8px}
+.jcard h3{font-size:19px;margin-bottom:10px}
+.jcard p{color:var(--muted);font-size:15px;margin:0 0 12px;flex:1}
+.jcard .hi{font-size:14.5px;color:var(--ink);font-weight:600;margin-top:auto;padding-top:8px;border-top:1px solid var(--line)}
+
+/* Pills (why us) */
+.pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:30px}
+.pill{border:1px solid var(--line);border-radius:2px;padding:22px;background:var(--paper)}
+.pill h3{font-family:'Spectral',serif;font-size:18px;margin-bottom:8px}
+.pill p{color:var(--muted);font-size:15px}
+
+/* Risk cards */
+.risk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
+.risk-card{border:1px solid var(--line);border-top:3px solid var(--ink);border-radius:2px;padding:24px}
+.risk-label{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--muted);margin-bottom:10px}
+.risk-card h3{font-family:'Spectral',serif;font-size:18px;margin-bottom:8px}
+.risk-card p{color:var(--muted);font-size:14.5px;line-height:1.6}
+
+/* Band */
+.band{background:var(--ink-2);color:var(--ivory)}
+.band .wrap{padding:52px 24px;display:flex;gap:30px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.band h2{color:#fff;font-size:clamp(23px,3vw,30px);max-width:24ch}
+.band p{color:#C4CEDB;margin:12px 0 0;max-width:46ch}
+
+/* WhatsApp banner */
+.wa-banner{background:#f0fef4;border-top:1px solid #a7f3d0;border-bottom:1px solid #a7f3d0;padding:36px 0;text-align:center}
+.wa-banner p{font-size:16px;color:var(--ink-soft);margin-bottom:20px}
+
+/* Form */
+.form-sec{background:var(--ivory);border-top:1px solid var(--line)}
+.form-sec .wrap{padding:72px 24px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.form-sec h2{font-size:clamp(24px,3.2vw,34px);margin-bottom:18px}
+.form-sec p.sub{color:var(--muted);font-size:16px;line-height:1.7;margin-bottom:24px}
+.form-group{margin-bottom:18px}
+.form-group label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:6px;letter-spacing:.04em;text-transform:uppercase}
+.form-group input,.form-group textarea,.form-group select{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:2px;font-size:15px;font-family:inherit;color:var(--ink);background:var(--paper);outline:none;transition:border .15s}
+.form-group input:focus,.form-group textarea:focus{border-color:var(--brass)}
+.form-group textarea{resize:vertical;min-height:110px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+#form-ok{display:none;background:#f0fef4;border:1px solid #a7f3d0;border-radius:2px;padding:24px;text-align:center}
+#form-ok p{color:var(--ok);font-weight:600;font-size:17px}
+#form-err{display:none;color:#B03A2E;font-size:14px;margin-bottom:12px;background:#fef2f2;padding:10px 14px;border-radius:2px;border:1px solid #fca5a5}
+.contact-alt{margin-top:32px;padding-top:28px;border-top:1px solid var(--line)}
+.contact-alt p{color:var(--muted);font-size:15px;margin-bottom:16px}
+
+/* FAQ */
+.faq-list details{border-top:1px solid var(--line);padding:22px 0}
+.faq-list details:last-of-type{border-bottom:1px solid var(--line)}
+.faq-list summary{font-family:'Spectral',serif;font-size:20px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;align-items:baseline}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"+";color:var(--brass);font-size:24px;line-height:1}
+.faq-list details[open] summary::after{content:"–"}
+.faq-list p{color:var(--muted);margin:14px 0 0;max-width:64ch;font-size:16px;line-height:1.7}
+
+/* Footer */
+footer{background:var(--paper);border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+footer .wrap{padding:34px 24px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer b{color:var(--ink);font-weight:600;font-family:'Spectral',serif;font-size:15px}
+.foot-links{display:flex;gap:1.5rem;flex-wrap:wrap}
+.foot-links a{text-decoration:none;color:var(--muted)}.foot-links a:hover{color:var(--ink)}
+
+@media(max-width:760px){
+  .jgrid,.pillars,.risk-grid,.form-row{grid-template-columns:1fr}
+  .diagram .wrap,.form-sec .wrap{grid-template-columns:1fr;gap:32px}
+  .band .wrap{flex-direction:column;align-items:flex-start}
+  .sec{padding:56px 0}
+  .nav-links{display:none}
+}
+</style>
 </head>
 <body>
+
 <nav>
-  <div class="container">
-    <div class="nav-inner">
-      <a href="/" class="nav-logo"><span class="eu-flag"><span class="star">★</span><span class="star">★</span><span class="star">★</span></span> BusinessDigital AI</a>
+  <div class="wrap">
+    <div class="nav-in">
+      <a href="/" class="nav-logo">BusinessDigital AI</a>
       <ul class="nav-links">
         <li><a href="/enterprise">Enterprise</a></li>
         <li><a href="/investors">Investors</a></li>
         <li><a href="/about">About</a></li>
-        <li><a href="/#audit-form" class="nav-cta">Book free audit →</a></li>
       </ul>
+      <a href="https://wa.me/33783609020" class="nav-wa" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.522 5.855L.057 23.882a.75.75 0 0 0 .92.939l6.23-1.63C8.915 24.383 10.41 24.75 12 24.75 18.627 24.75 24 19.377 24 12S18.627 0 12 0zm0 22.5a10.458 10.458 0 0 1-5.31-1.445.75.75 0 0 0-.534-.08l-4.4 1.152 1.12-4.229a.75.75 0 0 0-.1-.604A10.414 10.414 0 0 1 1.5 12C1.5 6.201 6.201 1.5 12 1.5S22.5 6.201 22.5 12 17.799 22.5 12 22.5z"/></svg>
+        WhatsApp
+      </a>
     </div>
   </div>
 </nav>
 
-<section class="hero" style="padding:4rem 0 3rem">
-  <div class="container" style="max-width:800px">
-    <span class="hero-eyebrow">★ Enterprise</span>
-    <h1 style="font-size:2.6rem;line-height:1.15">Three legal risks your current AI vendor is not telling you about — and how to eliminate them.</h1>
-    <p class="hero-sub">If your teams use ChatGPT, Microsoft Copilot, or Google Gemini, your data is governed by US law. The Cloud Act (2018) compels US cloud providers to hand data to US authorities regardless of where it is stored. GDPR does not protect you from this. We give you a written legal opinion and a compliant alternative — at no cost to your company for the first two phases.</p>
-    <div class="hero-actions"><a href="#contact-form" class="btn-primary">Get a free audit →</a></div>
-    <div class="hero-badges" style="margin-top:1.5rem">
-      <span class="badge badge--green">✓ Zero cost for audit and training</span>
-      <span class="badge">EU AI Act compliant</span>
-      <span class="badge">French-licensed legal experts</span>
-      <span class="badge">Open-source AI on French soil</span>
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Trusted AI · 100% sovereign</span>
+    <h1>Get a trusted AI, in three steps</h1>
+    <p class="lead">Your own secure, open-source AI, hosted in France. No dependency on US-operated models, and no way for a foreign government to reach your data under the Patriot Act or the Cloud Act. The first two steps cost nothing. The third cuts your AI costs by up to 80%.</p>
+    <div class="cta-row">
+      <a class="btn btn-brass" href="#contact">Book my free audit</a>
+      <a class="btn btn-ghost" href="#steps">See the three steps</a>
+    </div>
+    <div class="trust">
+      <span><b>Free</b> audit</span>
+      <span><b>Fully funded</b> training, no upfront cost</span>
+      <span><b>Hosted</b> in France</span>
+      <span><b>Up to 80%</b> lower AI costs</span>
+    </div>
+  </div>
+</header>
+
+<section class="sec">
+  <div class="wrap">
+    <span class="eyebrow">The real stakes</span>
+    <h2 style="margin-top:18px">Powerful AI should not cost you your confidentiality</h2>
+    <p class="lede">Most AI services are operated by US-based companies. Under the Patriot Act and the Cloud Act, US authorities can compel these companies to hand over the data they hold, no matter where the servers sit. Hosting in Europe is not enough on its own: what matters is depending on no provider subject to those laws.</p>
+    <p class="lede">Our answer is a trusted, open-source AI installed on French infrastructure that you control. Your data never leaves, your AI stays compliant with the EU AI Act, and you decide exactly what goes in and out of the model. A certified training organization, AI Act specialists and qualified French legal counsel — all under one roof.</p>
+    <div class="risk-grid" style="margin-top:40px">
+      <div class="risk-card">
+        <div class="risk-label">US Law · 2018</div>
+        <h3>The Cloud Act</h3>
+        <p>Compels US cloud providers to hand data to US authorities regardless of where the servers are located. Your European hosting contract does not override this.</p>
+      </div>
+      <div class="risk-card">
+        <div class="risk-label">US Law</div>
+        <h3>The Patriot Act</h3>
+        <p>Allows US intelligence agencies to access data from any US-based company without a warrant and without notifying you or your data subjects.</p>
+      </div>
+      <div class="risk-card">
+        <div class="risk-label">EU Regulation · 2024</div>
+        <h3>The EU AI Act</h3>
+        <p>Fines of up to 7% of global turnover for non-compliant AI use in high-risk categories. Most companies using commercial AI today have no compliance file.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section section--white">
-  <div class="container">
-    <span class="section-label">The three risks</span>
-    <h2 class="section-h2">What your legal and compliance teams need to know</h2>
-    <div class="threat-grid">
-      <div class="threat-card">
-        <span class="threat-tag">US LAW</span>
-        <h3>Cloud Act (2018)</h3>
-        <p>Forces US cloud providers to give US authorities access to any data they hold — even data stored in Europe. Your contracts with US vendors do not override this law. GDPR does not either.</p>
+<section class="diagram">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">The principle</span>
+      <h2 style="margin-top:16px">Your data never crosses the border</h2>
+      <p>The model runs inside your own infrastructure, in France. Nothing is sent to a foreign provider. There is no third party, American or otherwise, that could be compelled to disclose your data.</p>
+    </div>
+    <div aria-hidden="true">
+      <svg viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg">
+        <rect x="18" y="40" width="300" height="234" rx="8" fill="#FBFAF6" stroke="#0E1B2A" stroke-width="1.6"/>
+        <text x="34" y="66" font-family="Inter,sans-serif" font-size="12" fill="#0E1B2A" font-weight="600">Your infrastructure · France</text>
+        <rect x="112" y="120" width="112" height="60" rx="6" fill="#0E1B2A"/>
+        <text x="168" y="155" text-anchor="middle" font-family="Spectral,serif" font-size="15" fill="#F5F3ED" font-weight="600">Your AI</text>
+        <circle cx="60" cy="150" r="7" fill="#A9843C"/><circle cx="60" cy="182" r="7" fill="#A9843C"/><circle cx="60" cy="214" r="7" fill="#A9843C"/>
+        <text x="42" y="244" font-family="Inter,sans-serif" font-size="11" fill="#54627A">Your data</text>
+        <line x1="72" y1="150" x2="108" y2="150" stroke="#A9843C" stroke-width="1.6"/>
+        <line x1="72" y1="182" x2="108" y2="168" stroke="#A9843C" stroke-width="1.6"/>
+        <line x1="72" y1="214" x2="108" y2="176" stroke="#A9843C" stroke-width="1.6"/>
+        <rect x="360" y="96" width="104" height="108" rx="8" fill="none" stroke="#54627A" stroke-width="1.4" stroke-dasharray="5 5"/>
+        <text x="412" y="126" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#54627A">Foreign</text>
+        <text x="412" y="144" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#54627A">servers</text>
+        <line x1="320" y1="150" x2="352" y2="150" stroke="#0E1B2A" stroke-width="1.6"/>
+        <circle cx="336" cy="150" r="13" fill="none" stroke="#B03A2E" stroke-width="2.4"/>
+        <line x1="327" y1="141" x2="345" y2="159" stroke="#B03A2E" stroke-width="2.4"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="sec journey" id="steps">
+  <div class="wrap">
+    <span class="eyebrow">How it works</span>
+    <h2 style="margin-top:16px">Your trusted AI, in three steps</h2>
+    <p style="color:var(--muted);font-size:17px;margin-top:14px;max-width:58ch">A simple path that removes the risk before any investment. The first two steps cost you nothing.</p>
+    <div class="jgrid">
+      <div class="jcard">
+        <div class="num">01</div>
+        <div class="zero">Zero to pay</div>
+        <h3>Free audit</h3>
+        <p>We determine exactly how to deploy a trusted AI at your organisation, whether you can meet the EU AI Act, and how to keep your data out of reach of the Patriot Act and the Cloud Act. We produce a written legal opinion from our French-licensed jurists.</p>
+        <div class="hi">No commitment · 48-hour response</div>
       </div>
-      <div class="threat-card">
-        <span class="threat-tag">US LAW</span>
-        <h3>Patriot Act</h3>
-        <p>Allows US intelligence agencies to access data from US-based companies without a warrant or notice. Choosing an American AI is an implicit consent to this access.</p>
+      <div class="jcard">
+        <div class="num">02</div>
+        <div class="zero">Zero to pay</div>
+        <h3>Training to run your trusted AI</h3>
+        <p>We train your teams to deploy and govern your own trusted AI, delivered by BusinessDigital.fr, a Qualiopi-certified training organisation (RNQ-25/10/2579). The skills stay in-house and depend on no outside vendor. We handle all OPCO and FSE paperwork.</p>
+        <div class="hi">Fully funded · no upfront cost</div>
       </div>
-      <div class="threat-card">
-        <span class="threat-tag">EU REGULATION</span>
-        <h3>EU AI Act (2024)</h3>
-        <p>Fines of up to 7% of global turnover for non-compliant AI use in high-risk categories. We build your compliance file and keep it current as the regulation evolves.</p>
+      <div class="jcard">
+        <div class="num">03</div>
+        <div class="zero" style="color:var(--brass)">Up to 80% savings</div>
+        <h3>Sovereign hosting</h3>
+        <p>You host your own trusted, open-source AI in our French AI data centres at InnovVal Data Hills (Aulnay-sous-Bois), built with our partner Compagnie de Phalsbourg. Your data stays in France, under your control, with no per-token billing and no vendor dependency.</p>
+        <div class="hi">Cut AI costs by up to 80%</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section section--sky">
-  <div class="container">
-    <span class="section-label">How it works</span>
-    <h2 class="section-h2">From exposure to compliant deployment in three steps</h2>
-    <div class="steps-grid">
-      <div class="step-card"><span class="step-free">FREE</span><div class="step-number">1</div><h3>Sovereignty audit</h3><p>A 60-minute call with our team. We map your current AI tools, identify your legal exposure, and give you a written opinion from our French-licensed jurists. Zero cost.</p><div class="step-saving">→ Written legal opinion included</div></div>
-      <div class="step-card"><span class="step-free">FUNDED</span><div class="step-number">2</div><h3>State-funded training</h3><p>Your teams are trained to deploy and manage a compliant, open-source AI system. Training is funded 100% by the French State or European Social Fund through BusinessDigital.fr (Qualiopi RNQ-25/10/2579).</p><div class="step-saving">→ Zero cost. We handle all OPCO and FSE paperwork.</div></div>
-      <div class="step-card"><div class="step-number">3</div><h3>Deploy on French soil</h3><p>Your dedicated AI runs on our data centre infrastructure at InnovVal Data Hills (Aulnay-sous-Bois), built with Compagnie de Phalsbourg. Open-source models, no data leaves France.</p><div class="step-saving">→ Cut AI costs by up to 80% vs US hyperscalers</div></div>
+<section class="sec">
+  <div class="wrap">
+    <span class="eyebrow">Why us</span>
+    <h2 style="margin-top:16px">Legal, compliance and technology, in one place</h2>
+    <div class="pillars">
+      <div class="pill"><h3>Qualiopi-certified training</h3><p>A recognised training organisation, so your team can be trained at no upfront cost through your training budget (OPCO, FSE, or CPF).</p></div>
+      <div class="pill"><h3>EU AI Act specialists</h3><p>Experts who translate the regulation into a concrete governance framework for your AI, and produce the compliance file your board and DPO need.</p></div>
+      <div class="pill"><h3>Qualified French legal counsel</h3><p>Lawyers admitted in France who help European companies comply with EU law and shield themselves from US extraterritorial law.</p></div>
+      <div class="pill"><h3>Sovereign AI data centres</h3><p>Open-source models hosted in France, at InnovVal Data Hills (Aulnay-sous-Bois), so your data never leaves and never reaches a foreign provider.</p></div>
     </div>
   </div>
 </section>
 
-<section class="section section--white">
-  <div class="container" style="max-width:760px">
-    <span class="section-label">Sectors</span>
-    <h2 class="section-h2">We work with companies that have something to protect</h2>
-    <p class="section-sub">Financial services, healthcare, legal, manufacturing, public sector, defence, and any company handling sensitive customer or operational data that cannot afford US government access.</p>
-    <div style="display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.5rem">
-      <span class="badge">Financial services</span><span class="badge">Healthcare</span><span class="badge">Legal</span><span class="badge">Manufacturing</span><span class="badge">Public sector</span><span class="badge">Defence</span><span class="badge">R&amp;D</span><span class="badge">Insurance</span>
+<section class="sec" style="background:var(--ivory);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <span class="eyebrow">Common questions</span>
+    <h2 style="margin-top:16px">What enterprises usually ask us</h2>
+    <div class="faq-list" style="margin-top:32px">
+      <details><summary>Does GDPR not protect us from the Cloud Act?</summary><p>No. The Cloud Act is US law, and it compels US-based companies to hand over data to US authorities regardless of where the servers are and regardless of any EU regulation. GDPR and the Cloud Act operate in different legal orders. Having your data hosted by a US company in Europe gives you GDPR compliance but no Cloud Act protection.</p></details>
+      <details><summary>What exactly is the EU AI Act risk for us?</summary><p>Any company using AI in a high-risk category — which includes HR decisions, credit scoring, access to essential services, biometric data, and others — must document their AI system's compliance. Penalties for non-compliance reach 7% of global annual turnover. Most companies currently have no compliance file in place.</p></details>
+      <details><summary>What does "fully funded training" mean in practice?</summary><p>French employers contribute to collective training funds (OPCO) throughout the year. Those funds cover certified training programmes. Because BusinessDigital.fr is Qualiopi-certified, your teams can be trained under this scheme at no direct cost to your company. We prepare and submit all the administrative paperwork. The same mechanism is available through the European Social Fund (FSE).</p></details>
+      <details><summary>Which AI model do you host?</summary><p>We primarily deploy GLM 5.2 — an open-source model that performs comparably to Google Gemini and close to GPT-4, running entirely on-premises with no data leaving your infrastructure. For clients whose use cases require the highest capability tier, we can also set up Claude (Anthropic) deployments through our official Claude Partner Network membership.</p></details>
+      <details><summary>What is the typical timeline?</summary><p>The audit call happens within 48 hours of your request. The written legal opinion follows within a week. The training programme runs over a period set by your teams' availability — typically four to eight weeks. Infrastructure setup for hosting is agreed during the training phase and does not require a separate procurement process.</p></details>
     </div>
   </div>
 </section>
 
-<section class="section section--sky" id="contact-form">
-  <div class="container" style="max-width:680px">
-    <span class="section-label">Get in touch</span>
-    <h2 class="section-h2" style="margin-bottom:.75rem">Request a callback</h2>
-    <p style="font-size:.95rem;color:var(--body);margin-bottom:2rem;line-height:1.7">We respond within 24 hours. No commitment, no sales pressure.</p>
-    <div id="form-success" style="display:none;background:#f0faf5;border:1.5px solid #a3d9bb;border-radius:12px;padding:2rem;text-align:center">
-      <p style="font-size:1.1rem;font-weight:600;color:#065f46;font-family:'Syne',sans-serif">Request received.</p>
-      <p style="font-size:.9rem;color:#047857;margin-top:.5rem">We will be in touch within 24 hours.</p>
+<div class="wa-banner">
+  <div class="wrap">
+    <p>Prefer to talk directly? We respond on WhatsApp, usually the same day.</p>
+    <a href="https://wa.me/33783609020" class="btn btn-wa" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.522 5.855L.057 23.882a.75.75 0 0 0 .92.939l6.23-1.63C8.915 24.383 10.41 24.75 12 24.75 18.627 24.75 24 19.377 24 12S18.627 0 12 0zm0 22.5a10.458 10.458 0 0 1-5.31-1.445.75.75 0 0 0-.534-.08l-4.4 1.152 1.12-4.229a.75.75 0 0 0-.1-.604A10.414 10.414 0 0 1 1.5 12C1.5 6.201 6.201 1.5 12 1.5S22.5 6.201 22.5 12 17.799 22.5 12 22.5z"/></svg>
+      Message us on WhatsApp
+    </a>
+  </div>
+</div>
+
+<section class="form-sec" id="contact">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Free audit</span>
+      <h2 style="margin-top:16px">Book your free sovereignty audit</h2>
+      <p class="sub">A 60-minute call with our team. We map your AI exposure, deliver a written legal opinion, and lay out your options — at no cost and with no commitment.</p>
+      <div class="contact-alt">
+        <p>Or reach us directly:</p>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <a href="https://wa.me/33783609020" class="btn btn-wa" target="_blank" rel="noopener" style="width:fit-content">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.522 5.855L.057 23.882a.75.75 0 0 0 .92.939l6.23-1.63C8.915 24.383 10.41 24.75 12 24.75 18.627 24.75 24 19.377 24 12S18.627 0 12 0zm0 22.5a10.458 10.458 0 0 1-5.31-1.445.75.75 0 0 0-.534-.08l-4.4 1.152 1.12-4.229a.75.75 0 0 0-.1-.604A10.414 10.414 0 0 1 1.5 12C1.5 6.201 6.201 1.5 12 1.5S22.5 6.201 22.5 12 17.799 22.5 12 22.5z"/></svg>
+            WhatsApp +33 7 83 60 90 20
+          </a>
+          <a href="mailto:info@businessdigitalai.com" style="font-size:15px;color:var(--muted);text-decoration:none">info@businessdigitalai.com</a>
+        </div>
+      </div>
     </div>
-    <form id="page-form" style="background:var(--white);border:1px solid var(--border);border-radius:16px;padding:2rem;display:flex;flex-direction:column;gap:1.25rem">
-      <input type="hidden" name="_subject_hint" value="Enterprise audit request">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
-        <div>
-          <label style="display:block;font-size:.82rem;font-weight:600;color:var(--navy);margin-bottom:.4rem">Full name <span style="color:#c0392b">*</span></label>
-          <input name="name" required placeholder="Jane Smith" style="width:100%;padding:.65rem .9rem;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:inherit;outline:none">
+    <div>
+      <div id="form-ok"><p>Request received. We will be in touch within 24 hours.</p></div>
+      <form id="audit-form">
+        <div class="form-row">
+          <div class="form-group"><label>Full name *</label><input name="name" required placeholder="Jane Smith"></div>
+          <div class="form-group"><label>Email *</label><input name="email" type="email" required placeholder="jane@company.com"></div>
         </div>
-        <div>
-          <label style="display:block;font-size:.82rem;font-weight:600;color:var(--navy);margin-bottom:.4rem">Email <span style="color:#c0392b">*</span></label>
-          <input name="email" type="email" required placeholder="jane@company.com" style="width:100%;padding:.65rem .9rem;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:inherit;outline:none">
+        <div class="form-row">
+          <div class="form-group"><label>Company</label><input name="company" placeholder="Acme SA"></div>
+          <div class="form-group"><label>Phone</label><input name="phone" placeholder="+33 6 …"></div>
         </div>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
-        <div>
-          <label style="display:block;font-size:.82rem;font-weight:600;color:var(--navy);margin-bottom:.4rem">Company</label>
-          <input name="company" placeholder="Acme SA" style="width:100%;padding:.65rem .9rem;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:inherit;outline:none">
-        </div>
-        <div>
-          <label style="display:block;font-size:.82rem;font-weight:600;color:var(--navy);margin-bottom:.4rem">Phone</label>
-          <input name="phone" placeholder="+33 6 ..." style="width:100%;padding:.65rem .9rem;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:inherit;outline:none">
-        </div>
-      </div>
-      <div>
-        <label style="display:block;font-size:.82rem;font-weight:600;color:var(--navy);margin-bottom:.4rem">Your message</label>
-        <textarea name="message" rows="3" placeholder="Tell us about your situation..." style="width:100%;padding:.65rem .9rem;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:inherit;resize:vertical;outline:none"></textarea>
-      </div>
-      <div id="form-error" style="display:none;color:#c0392b;font-size:.84rem;padding:.6rem .9rem;background:#fff0f0;border-radius:6px;border:1px solid #fcc"></div>
-      <button type="submit" id="form-btn" style="background:var(--eu-blue);color:var(--white);border:none;padding:.9rem 2rem;border-radius:8px;font-size:.95rem;font-weight:600;cursor:pointer;font-family:inherit">Send →</button>
-      <p style="font-size:.77rem;color:var(--muted);text-align:center">Response within 24 hours.</p>
-    </form>
+        <div class="form-group"><label>AI tools you currently use</label><textarea name="message" placeholder="e.g. ChatGPT, Copilot, Google Gemini, internal tools…"></textarea></div>
+        <div id="form-err"></div>
+        <button type="submit" class="btn btn-dark" id="form-btn" style="width:100%;justify-content:center">Send my request</button>
+        <p style="font-size:13px;color:var(--muted);margin-top:10px;text-align:center">Response within 24 hours. No commitment.</p>
+      </form>
+    </div>
   </div>
 </section>
-<script>
-document.getElementById('page-form').addEventListener('submit', async function(e) {
-  e.preventDefault();
-  var btn = document.getElementById('form-btn');
-  var errEl = document.getElementById('form-error');
-  btn.textContent = 'Sending…'; btn.disabled = true; errEl.style.display = 'none';
-  var data = Object.fromEntries(new FormData(this));
-  try {
-    var res = await fetch('https://bxfwxrlfowjhynpdyqof.supabase.co/functions/v1/submit-audit-businessdigitalai', {
-      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)
-    });
-    var json = await res.json();
-    if (json.ok) { document.getElementById('page-form').style.display='none'; document.getElementById('form-success').style.display='block'; }
-    else { errEl.textContent='Error. Email info@compagniedephalsbourgia.com'; errEl.style.display='block'; btn.textContent='Send →'; btn.disabled=false; }
-  } catch(err) { errEl.textContent='Connection error. Email info@compagniedephalsbourgia.com'; errEl.style.display='block'; btn.textContent='Send →'; btn.disabled=false; }
-});
-</script>
 
 <footer>
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div style="font-family:'Syne',sans-serif;font-weight:700;color:white;font-size:1.1rem">★★★ BusinessDigital AI</div>
-        <p>Trusted AI for European enterprise. Official Claude (Anthropic) Partner. Business school in France and Madagascar. Qualiopi certified (RNQ-25/10/2579).</p>
-        <p style="margin-top:.5rem;font-size:.78rem;color:#374151">SIRET 924 152 572 00013 · 54 avenue Hoche, 75008 Paris, France<br>✉ info@compagniedephalsbourgia.com · ☎ +33 7 83 60 90 20</p>
-      </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="/#offer">Sovereignty audit</a></li>
-          <li><a href="/#offer">State-funded training</a></li>
-          <li><a href="/#offer">Sovereign AI hosting</a></li>
-          <li><a href="/enterprise">Enterprise</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="/investors">Investors</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="https://compagniedephalsbourgia.com" target="_blank">Compagnie de Phalsbourg</a></li>
-          <li><a href="mailto:info@compagniedephalsbourgia.com">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 BusinessDigital AI / Croissance Personnelle. All rights reserved.</p>
-      <p style="color:#4b5563;font-size:.78rem">Data sovereign · GDPR compliant · EU AI Act ready</p>
+  <div class="wrap">
+    <div><b>BusinessDigital AI</b><br>Business school in France and Madagascar · Training · Consulting · Sovereign AI data centres<br>54 avenue Hoche, 75008 Paris, France · info@businessdigitalai.com · +33 7 83 60 90 20</div>
+    <div class="foot-links">
+      <a href="/">Home</a><a href="/enterprise">Enterprise</a><a href="/investors">Investors</a><a href="/about">About</a>
     </div>
   </div>
 </footer>
-</body></html>
+
+<script>
+document.getElementById('audit-form').addEventListener('submit',async function(e){
+  e.preventDefault();
+  var btn=document.getElementById('form-btn'),err=document.getElementById('form-err');
+  btn.textContent='Sending…';btn.disabled=true;err.style.display='none';
+  var data=Object.fromEntries(new FormData(this));
+  data._subject_hint='Enterprise audit request';
+  try{
+    var r=await fetch('https://bxfwxrlfowjhynpdyqof.supabase.co/functions/v1/submit-audit-businessdigitalai',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+    var j=await r.json();
+    if(j.ok){this.style.display='none';document.getElementById('form-ok').style.display='block';}
+    else{err.textContent='An error occurred. Please contact us on WhatsApp or by email.';err.style.display='block';btn.textContent='Send my request';btn.disabled=false;}
+  }catch(ex){err.textContent='Connection error. Please contact us on WhatsApp or by email.';err.style.display='block';btn.textContent='Send my request';btn.disabled=false;}
+});
+</script>
+</body>
+</html>

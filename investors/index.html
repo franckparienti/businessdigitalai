@@ -1,203 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Investor Relations — BusinessDigital AI</title>
-<meta name="description" content="We are building the European answer to xAI's AI compute model. Public-funded training creates a captive enterprise client pipeline for sovereign AI hosting at InnovVal Data Hills and Ecotone.">
-<meta property="og:title" content="Investor Relations — BusinessDigital AI">
-<meta property="og:description" content="We are building the European answer to xAI's AI compute model. Public-funded training creates a captive enterprise client pipeline for sovereign AI hosting at InnovVal Data Hills and Ecotone.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://businessdigitalai.com/investors">
-<meta name="robots" content="index, follow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invest in sovereign AI: training, consulting and AI data centers | BusinessDigital AI</title>
+<meta name="description" content="Investor brief. We acquire enterprise clients upstream through funded training and legal compliance, then host their trusted open-source AI in our own French data centers. High-margin, recurring, sovereignty-driven.">
 <link rel="canonical" href="https://businessdigitalai.com/investors">
+<meta property="og:title" content="Investor Relations — BusinessDigital AI">
+<meta property="og:description" content="We sit upstream of every enterprise AI infrastructure decision. AMF club deal. Funded training creates the client pipeline. Recurring hosting revenue.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/shared.css">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0E1B2A;--ink-2:#16283D;--ink-soft:#22364F;--ivory:#F5F3ED;--ivory-2:#EFEBE1;--brass:#A9843C;--brass-soft:#C9A863;--paper:#FBFAF6;--line:rgba(14,27,42,.14);--muted:#54627A;--ok:#2F6F5E;--wa:#25D366}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Spectral',Georgia,serif;font-weight:600;line-height:1.14;letter-spacing:-.01em}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--brass);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--brass)}
+a{color:inherit}.inl{text-decoration:none;border-bottom:1px solid var(--brass)}
+nav{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:100;padding:.7rem 0}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.nav-logo{font-family:'Spectral',serif;font-weight:700;font-size:1.1rem;color:var(--ink);text-decoration:none}
+.nav-links{display:flex;align-items:center;gap:1.75rem;list-style:none}
+.nav-links a{text-decoration:none;font-size:.875rem;font-weight:500;color:var(--muted)}.nav-links a:hover{color:var(--ink)}
+.nav-wa{display:inline-flex;align-items:center;gap:.5rem;background:var(--wa);color:#fff;padding:.45rem 1.1rem;border-radius:2px;font-weight:600;font-size:.85rem;text-decoration:none}.nav-wa:hover{background:#1ebe5d}
+.btn{display:inline-block;font-weight:600;font-size:15px;padding:14px 26px;border-radius:2px;text-decoration:none;transition:.18s ease;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.btn-dark{background:var(--ink);color:var(--ivory);border-color:var(--ink)}.btn-dark:hover{background:var(--ink-2)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}.btn-ghost:hover{border-color:var(--ink)}
+.btn-brass{background:var(--brass);color:#1a1206;border-color:var(--brass)}.btn-brass:hover{background:var(--brass-soft)}
+.btn-wa{background:var(--wa);color:#fff;border-color:var(--wa);display:inline-flex;align-items:center;gap:.6rem}.btn-wa:hover{background:#1ebe5d}
+.hero{background:var(--ink);color:var(--ivory);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 90% at 85% -10%,rgba(169,132,60,.16),transparent 55%);pointer-events:none}
+.hero .wrap{padding:70px 24px 78px;position:relative;z-index:1}
+.hero .eyebrow{color:var(--brass-soft)}.hero .eyebrow::before{background:var(--brass-soft)}
+.hero h1{font-size:clamp(33px,5.1vw,54px);margin:22px 0 0;max-width:15ch;color:#fff}
+.hero p.lead{font-size:clamp(16.5px,2.1vw,19px);color:#C9D2DF;max-width:52ch;margin:22px 0 34px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.hero .btn-ghost{color:var(--ivory);border-color:rgba(245,243,237,.3)}.hero .btn-ghost:hover{border-color:var(--ivory)}
+.sec{padding:76px 0}
+.sec h2{font-size:clamp(26px,3.6vw,38px);max-width:22ch}
+.lede{font-size:19px;color:var(--ink-soft);max-width:60ch;line-height:1.72;margin-top:26px}
+.lede+.lede{margin-top:20px}
+.ivory-sec{background:var(--ivory);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
+.metric{border-top:3px solid var(--brass);padding-top:14px}
+.metric .big{font-family:'Spectral',serif;font-size:clamp(26px,3vw,34px);color:var(--ink);font-weight:700}
+.metric p{color:var(--muted);font-size:14.5px;margin:8px 0 0;line-height:1.6}
+.jgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px}
+.jcard{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--brass);border-radius:2px;padding:26px 22px;display:flex;flex-direction:column}
+.jcard .num{font-family:'Spectral',serif;font-size:22px;color:var(--brass);font-weight:600;margin-bottom:8px}
+.jcard h3{font-family:'Spectral',serif;font-size:19px;margin-bottom:10px}
+.jcard p{color:var(--muted);font-size:15px;line-height:1.65}
+.list{margin-top:24px;padding:0;list-style:none}
+.list li{padding:16px 0;border-top:1px solid var(--line);color:var(--ink-soft);font-size:16px;display:flex;gap:16px;line-height:1.6}
+.list li::before{content:"";flex:0 0 8px;height:8px;margin-top:8px;background:var(--brass);border-radius:50%}
+.band{background:var(--ink-2);color:var(--ivory)}
+.band .wrap{padding:56px 24px;display:flex;gap:30px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.band h2{color:#fff;font-size:clamp(23px,3vw,30px);max-width:24ch}
+.band p{color:#C4CEDB;margin:12px 0 0;max-width:46ch}
+.wa-banner{background:#f0fef4;border-top:1px solid #a7f3d0;border-bottom:1px solid #a7f3d0;padding:36px 0;text-align:center}
+.wa-banner p{font-size:16px;color:var(--ink-soft);margin-bottom:20px}
+.form-sec{background:var(--ivory);border-top:1px solid var(--line)}
+.form-sec .wrap{padding:72px 24px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.form-sec h2{font-size:clamp(24px,3.2vw,34px);margin-bottom:18px}
+.form-group{margin-bottom:18px}
+.form-group label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:6px;letter-spacing:.04em;text-transform:uppercase}
+.form-group input,.form-group textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:2px;font-size:15px;font-family:inherit;color:var(--ink);background:var(--paper);outline:none;transition:border .15s}
+.form-group input:focus,.form-group textarea:focus{border-color:var(--brass)}
+.form-group textarea{resize:vertical;min-height:110px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+#form-ok{display:none;background:#f0fef4;border:1px solid #a7f3d0;border-radius:2px;padding:24px;text-align:center}
+#form-ok p{color:var(--ok);font-weight:600;font-size:17px}
+#form-err{display:none;color:#B03A2E;font-size:14px;margin-bottom:12px;background:#fef2f2;padding:10px 14px;border-radius:2px;border:1px solid #fca5a5}
+.contact-alt{margin-top:32px;padding-top:28px;border-top:1px solid var(--line)}
+.contact-alt p{color:var(--muted);font-size:15px;margin-bottom:16px}
+footer{background:var(--paper);border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+footer .wrap{padding:34px 24px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer b{color:var(--ink);font-weight:600;font-family:'Spectral',serif;font-size:15px}
+.foot-links{display:flex;gap:1.5rem;flex-wrap:wrap}
+.foot-links a{text-decoration:none;color:var(--muted)}.foot-links a:hover{color:var(--ink)}
+@media(max-width:760px){
+  .jgrid,.metrics,.form-row{grid-template-columns:1fr}
+  .form-sec .wrap,.band .wrap{grid-template-columns:1fr;flex-direction:column;align-items:flex-start}
+  .sec{padding:56px 0}
+  .nav-links{display:none}
+}
+</style>
 </head>
 <body>
+
 <nav>
-  <div class="container">
-    <div class="nav-inner">
-      <a href="/" class="nav-logo"><span class="eu-flag"><span class="star">★</span><span class="star">★</span><span class="star">★</span></span> BusinessDigital AI</a>
+  <div class="wrap">
+    <div class="nav-in">
+      <a href="/" class="nav-logo">BusinessDigital AI</a>
       <ul class="nav-links">
         <li><a href="/enterprise">Enterprise</a></li>
         <li><a href="/investors">Investors</a></li>
         <li><a href="/about">About</a></li>
-        <li><a href="/#audit-form" class="nav-cta">Book free audit →</a></li>
       </ul>
+      <a href="https://wa.me/33783609020" class="nav-wa" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.522 5.855L.057 23.882a.75.75 0 0 0 .92.939l6.23-1.63C8.915 24.383 10.41 24.75 12 24.75 18.627 24.75 24 19.377 24 12S18.627 0 12 0zm0 22.5a10.458 10.458 0 0 1-5.31-1.445.75.75 0 0 0-.534-.08l-4.4 1.152 1.12-4.229a.75.75 0 0 0-.1-.604A10.414 10.414 0 0 1 1.5 12C1.5 6.201 6.201 1.5 12 1.5S22.5 6.201 22.5 12 17.799 22.5 12 22.5z"/></svg>
+        WhatsApp
+      </a>
     </div>
   </div>
 </nav>
 
-<section class="section section--dark" style="padding:5rem 0 4rem">
-  <div class="container">
-    <span class="section-label section-label--white">Investor Relations</span>
-    <h1 class="section-h2 section-h2--white" style="font-size:2.6rem;max-width:750px">We are building the European answer to xAI's data centre model — with upstream deal flow built in.</h1>
-    <p class="section-sub section-sub--white" style="margin-top:1rem;max-width:650px">xAI generates approximately 55% operating margins selling AI compute, operating alongside SpaceX. We replicate that model for the European market, with a structural moat that AI compute providers cannot easily copy: we reach enterprises through state-funded training and legal advisory before they ever need to choose an infrastructure provider.</p>
-    <div class="hero-actions" style="margin-top:2rem"><a href="#contact-form" class="btn-primary">Request investor deck →</a></div>
-  </div>
-</section>
-
-
-<section class="section section--white">
-  <div class="container" style="max-width:760px">
-    <span class="section-label">The model</span>
-    <h2 class="section-h2">Why this is different from a standard infrastructure play</h2>
-    <p style="font-size:1rem;color:var(--body);line-height:1.8;margin-top:1.5rem">Most data centre projects carry commercialisation risk. You build the capacity, then spend years finding tenants to fill it. BusinessDigital inverts that order.</p>
-    <p style="font-size:1rem;color:var(--body);line-height:1.8;margin-top:1.25rem">The company trains enterprises in AI deployment and EU AI Act compliance, then hosts their models and data in its own French infrastructure — Aulnay-sous-Bois today, Sophia Antipolis when the second site opens. The client learns to run AI, keeps its data under French jurisdiction, and deals with a single counterparty from the first training session through to production. The training is covered in full by the OPCO funding system. Hosting is a separate contract.</p>
-    <p style="font-size:1rem;color:var(--body);line-height:1.8;margin-top:1.25rem">What this creates for the investor is a position that most infrastructure plays cannot offer: the operator who owns the capacity is also the one who brings the clients who fill it, because it qualifies their need during the training process itself. By the time a company signs a hosting contract, it has already spent months inside the ecosystem. The commercialisation problem is resolved upstream, not downstream.</p>
-    <p style="font-size:1rem;color:var(--body);line-height:1.8;margin-top:1.25rem">The club deal structure, framed by AMF regulation, gives investors a share of data centre capacity. It addresses two distinct profiles at once. An investor looking for a physical asset with recurring revenue looks at the infrastructure. An investor looking for growth looks at the training activity that drives occupancy. The same vehicle exposes you to both, without requiring you to take a position on which will be the larger driver.</p>
-    <p style="font-size:1rem;font-weight:600;color:var(--navy);line-height:1.8;margin-top:1.25rem">The demand and the asset sit in the same hand. That is not a marketing claim. It is the operating logic of the model.</p>
-  </div>
-</section>
-<section class="section section--navy">
-  <div class="container">
-    <span class="section-label section-label--white">The numbers</span>
-    <h2 class="section-h2 section-h2--white">Why the model works</h2>
-    <div class="stat-row" style="margin-top:2.5rem">
-      <div class="stat-block"><div class="stat-num">~55%</div><div class="stat-label">Operating margin of AI compute providers (xAI model)</div></div>
-      <div class="stat-block"><div class="stat-num">€0</div><div class="stat-label">Client acquisition cost through state-funded training partnerships</div></div>
-      <div class="stat-block"><div class="stat-num">100%</div><div class="stat-label">Training revenue covered by public funds — zero credit risk on this phase</div></div>
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Investor brief</span>
+    <h1>We sit upstream of every enterprise AI infrastructure decision</h1>
+    <p class="lead">BusinessDigital AI is a group uniting a business school in France and Madagascar, a training and consulting business, and sovereign AI data centres. We acquire enterprise clients early — through State-funded training and qualified legal counsel — then convert them into long-term customers of trusted AI hosting in our own French data centres.</p>
+    <div class="cta-row">
+      <a class="btn btn-brass" href="#contact">Request the deck</a>
+      <a class="btn btn-ghost" href="#thesis">Read the thesis</a>
     </div>
-    <div class="investor-grid" style="margin-top:3rem">
-      <div class="inv-card">
-        <span class="inv-tag">THE MOAT</span>
-        <h3>Upstream client acquisition</h3>
-        <p>Our Qualiopi-certified training and legal advisory services put us upstream of every future data centre client before any infrastructure competitor can reach them. Every enterprise we train becomes a qualified prospect for our hosting services. This is a structural position, not a marketing advantage.</p>
-      </div>
-      <div class="inv-card">
-        <span class="inv-tag">PUBLIC FUNDING</span>
-        <h3>State as a co-revenue stream</h3>
-        <p>The French State and European Social Fund finance our training at no cost to enterprises. This creates a zero-churn acquisition channel: clients have no upfront cost, so conversion rates are unusually high. The training phase is itself profitable before a single hosting contract is signed.</p>
-      </div>
-      <div class="inv-card">
-        <span class="inv-tag">REGULATION TAILWIND</span>
-        <h3>EU AI Act creates mandatory demand</h3>
-        <p>Every EU enterprise using AI in a high-risk category must now document compliance. We are the only team combining licensed French jurists, certified training, and sovereign infrastructure — making us the simplest path to compliance for any regulated European company.</p>
-      </div>
+  </div>
+</header>
+
+<section class="sec" id="thesis">
+  <div class="wrap">
+    <span class="eyebrow">The thesis</span>
+    <h2 style="margin-top:18px">AI hosting is a high-margin market. Client acquisition is the hard part. We solve it.</h2>
+    <p class="lede">Demand for AI compute and sovereign hosting is growing fast, and dedicated AI infrastructure has proven to be a high-margin business. But raw hosting is a commodity race won on capital and price. Our edge is different: we reach the client before the hosting decision is even made.</p>
+    <p class="lede">Through training funded by French and European public budgets, and through qualified legal experts who guide companies into EU AI Act compliance, we build a trusted relationship at the exact moment a company decides how to deploy AI. That relationship converts naturally into hosting our trusted, open-source AI in our own data centres. Lower acquisition cost upstream, recurring high-margin revenue downstream.</p>
+  </div>
+</section>
+
+<section class="sec ivory-sec">
+  <div class="wrap">
+    <span class="eyebrow">Why this is different</span>
+    <h2 style="margin-top:16px">Most data centre projects carry commercialisation risk. We invert the model.</h2>
+    <p style="color:var(--muted);font-size:17px;margin-top:16px;max-width:62ch;line-height:1.7">You build the capacity, then spend years finding tenants to fill it. We fill the pipeline before the infrastructure is even needed.</p>
+    <div style="margin-top:36px;max-width:760px">
+      <p style="font-size:17px;color:var(--ink-soft);line-height:1.78">The company trains enterprises in AI deployment and EU AI Act compliance, then hosts their models and data in its own French infrastructure — Aulnay-sous-Bois today, Sophia Antipolis when the second site opens. The client learns to run AI, keeps its data under French jurisdiction, and deals with a single counterparty from the first training session through to production. The training is covered in full by the OPCO funding system. Hosting is a separate contract.</p>
+      <p style="font-size:17px;color:var(--ink-soft);line-height:1.78;margin-top:22px">What this creates for the investor is a position that most infrastructure plays cannot offer: the operator who owns the capacity is also the one who brings the clients who fill it, because it qualifies their need during the training process itself. By the time a company signs a hosting contract, it has already spent months inside the ecosystem. The commercialisation problem is resolved upstream, not downstream.</p>
+      <p style="font-size:17px;color:var(--ink-soft);line-height:1.78;margin-top:22px">The club deal structure, framed by AMF regulation, gives investors a share of data centre capacity. It addresses two distinct profiles at once. An investor looking for a physical asset with recurring revenue looks at the infrastructure. An investor looking for growth looks at the training activity that drives occupancy. The same vehicle exposes you to both, without requiring you to take a position on which will be the larger driver.</p>
+      <p style="font-size:17px;color:var(--ink);font-weight:600;line-height:1.7;margin-top:22px">The demand and the asset sit in the same hand. That is not a marketing claim. It is the operating logic of the model.</p>
     </div>
   </div>
 </section>
 
-<section class="section section--dark">
-  <div class="container">
-    <span class="section-label section-label--white">Infrastructure</span>
-    <h2 class="section-h2 section-h2--white">Two data centre projects already in motion</h2>
-    <div class="investor-grid" style="margin-top:2.5rem">
-      <div class="inv-card">
-        <span class="inv-tag">PHASE 1 — LIVE</span>
-        <h3>InnovVal Data Hills — Aulnay-sous-Bois</h3>
-        <p>Our first data centre at the InnovVal economic hub near Paris, developed with Compagnie de Phalsbourg. Designed for AI workloads. On French soil. GDPR and NIS2 compliant. Operational for first client deployments.</p>
-        <a href="https://www.aulnay-sous-bois.fr/grands-projets/val-francilia/innovval-le-pole-economique-de-demain/" target="_blank" style="display:inline-block;margin-top:1rem;font-size:.8rem;color:#93c5fd;text-decoration:none">View project →</a>
+<section class="sec" style="background:var(--paper)">
+  <div class="wrap">
+    <span class="eyebrow">The flywheel</span>
+    <h2 style="margin-top:16px">From funded training to recurring hosting revenue</h2>
+    <div class="metrics">
+      <div class="metric"><div class="big">Upstream</div><p>Funded training and legal compliance put us in the room before the infrastructure choice is made. We qualify the client's sovereignty need during the process itself.</p></div>
+      <div class="metric"><div class="big">Trusted</div><p>Open-source, self-hosted AI in France answers the Cloud Act and AI Act concern directly. Clients own the model. No per-token billing, no vendor lock-in.</p></div>
+      <div class="metric"><div class="big">Recurring</div><p>Hosting in our own data centres turns each trained client into a long-term, high-margin customer. Revenue is contractual, not transactional.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec ivory-sec">
+  <div class="wrap">
+    <span class="eyebrow">What we are building</span>
+    <h2 style="margin-top:16px">Our own sovereign AI data centres, with a real-estate partner</h2>
+    <p class="lede" style="max-width:62ch">We develop our AI data centre capacity with our partner <a class="inl" href="https://compagniedephalsbourgia.com/">Compagnie de Phalsbourg</a>, to own rather than rent the infrastructure our clients will use.</p>
+    <ul class="list">
+      <li><span><strong>InnovVal Data Hills, Aulnay-sous-Bois.</strong> Our AI data centre within the <a class="inl" href="https://www.aulnay-sous-bois.fr/grands-projets/val-francilia/innovval-le-pole-economique-de-demain/">InnovVal economic hub</a>, in the Paris region. Designed for AI workloads, GDPR and NIS2 compliant, on French soil. First client deployments operational.</span></li>
+      <li><span><strong>Ecotone, southern France.</strong> A campus vision around the <a class="inl" href="https://www.lesechos.fr/pme-regions/provence-alpes-cote-dazur/ecotone-un-projet-ecolo-de-bureaux-signe-jean-nouvel-238106">Ecotone project</a> near Sophia&#8209;Antipolis, designed by Jean Nouvel — our planned <a class="inl" href="https://businessdigital.fr/station-f-sophia-antipolis">Station F for AI</a> in the south, combining a school and on-site AI data centres.</span></li>
+      <li><span><strong>A business school in France and Madagascar.</strong> The talent pipeline and enterprise client engine that feeds both data centre sites.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <span class="eyebrow">The opportunity</span>
+    <h2 style="margin-top:16px">Why invest with us</h2>
+    <div class="jgrid">
+      <div class="jcard">
+        <div class="num">01</div>
+        <h3>A defensible entry point</h3>
+        <p>Certified training and legal compliance are hard to replicate and give us privileged, early access to enterprise clients before any competing infrastructure provider can reach them.</p>
       </div>
-      <div class="inv-card">
-        <span class="inv-tag">PHASE 2 — PLANNED</span>
-        <h3>Ecotone — South of France</h3>
-        <p>A second campus designed by Jean Nouvel near Sophia Antipolis — our future AI campus combining a business school, research hub, and dedicated data centre. The Station F model applied to sovereign AI infrastructure.</p>
-        <a href="https://www.lesechos.fr/pme-regions/provence-alpes-cote-dazur/ecotone-un-projet-ecolo-de-bureaux-signe-jean-nouvel-238106" target="_blank" style="display:inline-block;margin-top:1rem;font-size:.8rem;color:#93c5fd;text-decoration:none">View project →</a>
+      <div class="jcard">
+        <div class="num">02</div>
+        <h3>Sovereignty tailwind</h3>
+        <p>The Cloud Act, the Patriot Act and the EU AI Act are pushing European companies toward sovereign, self-hosted AI. Regulation creates the demand. We are positioned exactly at the intersection.</p>
       </div>
-      <div class="inv-card">
-        <span class="inv-tag">TECHNOLOGY</span>
-        <h3>GLM 5.2 open-source AI</h3>
-        <p>More capable than Google Gemini, approaching GPT-4 class performance. Fully open source. Deployable on-premises. No data leaves our infrastructure. Clients own their model entirely — no per-token billing, no dependency on any US vendor.</p>
-        <a href="https://chat.z.ai" target="_blank" style="display:inline-block;margin-top:1rem;font-size:.8rem;color:#93c5fd;text-decoration:none">chat.z.ai →</a>
+      <div class="jcard">
+        <div class="num">03</div>
+        <h3>Own the infrastructure</h3>
+        <p>With Compagnie de Phalsbourg, we build and own AI data centre capacity rather than renting it, capturing the recurring, high-margin layer of the value chain with the client pipeline already in place.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section section--sky" id="contact-form">
-  <div class="container" style="max-width:680px">
-    <span class="section-label">Get in touch</span>
-    <h2 class="section-h2" style="margin-bottom:.75rem">Request a callback</h2>
-    <p style="font-size:.95rem;color:var(--body);margin-bottom:2rem;line-height:1.7">We respond within 24 hours. No commitment, no sales pressure.</p>
-    <div id="form-success" style="display:none;background:#f0faf5;border:1.5px solid #a3d9bb;border-radius:12px;padding:2rem;text-align:center">
-      <p style="font-size:1.1rem;font-weight:600;color:#065f46;font-family:'Syne',sans-serif">Request received.</p>
-      <p style="font-size:.9rem;color:#047857;margin-top:.5rem">We will be in touch within 24 hours.</p>
+<div class="band">
+  <div class="wrap">
+    <div>
+      <h2>The model works for two investor profiles</h2>
+      <p>Physical asset with recurring revenue (the data centre), or growth from the training activity that drives occupancy. The same club deal exposes you to both.</p>
     </div>
-    <form id="page-form" style="background:var(--white);border:1px solid var(--border);border-radius:16px;padding:2rem;display:flex;flex-direction:column;gap:1.25rem">
-      <input type="hidden" name="_subject_hint" value="Investor deck request — BusinessDigital AI">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
-        <div>
-          <label style="display:block;font-size:.82rem;font-weight:600;color:var(--navy);margin-bottom:.4rem">Full name <span style="color:#c0392b">*</span></label>
-          <input name="name" required placeholder="Jane Smith" style="width:100%;padding:.65rem .9rem;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:inherit;outline:none">
-        </div>
-        <div>
-          <label style="display:block;font-size:.82rem;font-weight:600;color:var(--navy);margin-bottom:.4rem">Email <span style="color:#c0392b">*</span></label>
-          <input name="email" type="email" required placeholder="jane@company.com" style="width:100%;padding:.65rem .9rem;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:inherit;outline:none">
+    <a class="btn btn-brass" href="#contact">Request the deck</a>
+  </div>
+</div>
+
+<div class="wa-banner">
+  <div class="wrap">
+    <p>Prefer a direct conversation? We are available on WhatsApp.</p>
+    <a href="https://wa.me/33783609020" class="btn btn-wa" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.522 5.855L.057 23.882a.75.75 0 0 0 .92.939l6.23-1.63C8.915 24.383 10.41 24.75 12 24.75 18.627 24.75 24 19.377 24 12S18.627 0 12 0zm0 22.5a10.458 10.458 0 0 1-5.31-1.445.75.75 0 0 0-.534-.08l-4.4 1.152 1.12-4.229a.75.75 0 0 0-.1-.604A10.414 10.414 0 0 1 1.5 12C1.5 6.201 6.201 1.5 12 1.5S22.5 6.201 22.5 12 17.799 22.5 12 22.5z"/></svg>
+      Message us on WhatsApp
+    </a>
+  </div>
+</div>
+
+<section class="form-sec" id="contact">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Investor relations</span>
+      <h2 style="margin-top:16px">Request the investor deck</h2>
+      <p style="color:var(--muted);font-size:16px;margin-top:14px;line-height:1.7">We share the full financial model and business plan under NDA. Send us your details and we will get back to you within 24 hours.</p>
+      <div class="contact-alt">
+        <p style="color:var(--muted);font-size:15px;margin-bottom:16px">Or contact us directly:</p>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <a href="https://wa.me/33783609020" class="btn btn-wa" target="_blank" rel="noopener" style="width:fit-content">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.522 5.855L.057 23.882a.75.75 0 0 0 .92.939l6.23-1.63C8.915 24.383 10.41 24.75 12 24.75 18.627 24.75 24 19.377 24 12S18.627 0 12 0zm0 22.5a10.458 10.458 0 0 1-5.31-1.445.75.75 0 0 0-.534-.08l-4.4 1.152 1.12-4.229a.75.75 0 0 0-.1-.604A10.414 10.414 0 0 1 1.5 12C1.5 6.201 6.201 1.5 12 1.5S22.5 6.201 22.5 12 17.799 22.5 12 22.5z"/></svg>
+            WhatsApp +33 7 83 60 90 20
+          </a>
+          <a href="mailto:info@businessdigitalai.com" style="font-size:15px;color:var(--muted);text-decoration:none">info@businessdigitalai.com</a>
         </div>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
-        <div>
-          <label style="display:block;font-size:.82rem;font-weight:600;color:var(--navy);margin-bottom:.4rem">Company</label>
-          <input name="company" placeholder="Acme SA" style="width:100%;padding:.65rem .9rem;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:inherit;outline:none">
+    </div>
+    <div>
+      <div id="form-ok"><p>Request received. We will be in touch within 24 hours.</p></div>
+      <form id="inv-form">
+        <div class="form-row">
+          <div class="form-group"><label>Full name *</label><input name="name" required placeholder="Jane Smith"></div>
+          <div class="form-group"><label>Email *</label><input name="email" type="email" required placeholder="jane@fund.com"></div>
         </div>
-        <div>
-          <label style="display:block;font-size:.82rem;font-weight:600;color:var(--navy);margin-bottom:.4rem">Phone</label>
-          <input name="phone" placeholder="+33 6 ..." style="width:100%;padding:.65rem .9rem;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:inherit;outline:none">
+        <div class="form-row">
+          <div class="form-group"><label>Organisation</label><input name="company" placeholder="Fund / family office / company"></div>
+          <div class="form-group"><label>Phone</label><input name="phone" placeholder="+33 6 …"></div>
         </div>
-      </div>
-      <div>
-        <label style="display:block;font-size:.82rem;font-weight:600;color:var(--navy);margin-bottom:.4rem">Your message</label>
-        <textarea name="message" rows="3" placeholder="Tell us about your situation..." style="width:100%;padding:.65rem .9rem;border:1px solid var(--border);border-radius:8px;font-size:.9rem;font-family:inherit;resize:vertical;outline:none"></textarea>
-      </div>
-      <div id="form-error" style="display:none;color:#c0392b;font-size:.84rem;padding:.6rem .9rem;background:#fff0f0;border-radius:6px;border:1px solid #fcc"></div>
-      <button type="submit" id="form-btn" style="background:var(--eu-blue);color:var(--white);border:none;padding:.9rem 2rem;border-radius:8px;font-size:.95rem;font-weight:600;cursor:pointer;font-family:inherit">Send →</button>
-      <p style="font-size:.77rem;color:var(--muted);text-align:center">Response within 24 hours.</p>
-    </form>
+        <div class="form-group"><label>Your investment profile or questions</label><textarea name="message" placeholder="Infrastructure / growth / both · ticket size · timeline · any specific questions…"></textarea></div>
+        <div id="form-err"></div>
+        <button type="submit" class="btn btn-dark" id="form-btn" style="width:100%;justify-content:center">Request the deck</button>
+        <p style="font-size:13px;color:var(--muted);margin-top:10px;text-align:center">We respond within 24 hours. NDA provided on request.</p>
+      </form>
+    </div>
   </div>
 </section>
-<script>
-document.getElementById('page-form').addEventListener('submit', async function(e) {
-  e.preventDefault();
-  var btn = document.getElementById('form-btn');
-  var errEl = document.getElementById('form-error');
-  btn.textContent = 'Sending…'; btn.disabled = true; errEl.style.display = 'none';
-  var data = Object.fromEntries(new FormData(this));
-  try {
-    var res = await fetch('https://bxfwxrlfowjhynpdyqof.supabase.co/functions/v1/submit-audit-businessdigitalai', {
-      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)
-    });
-    var json = await res.json();
-    if (json.ok) { document.getElementById('page-form').style.display='none'; document.getElementById('form-success').style.display='block'; }
-    else { errEl.textContent='Error. Email info@compagniedephalsbourgia.com'; errEl.style.display='block'; btn.textContent='Send →'; btn.disabled=false; }
-  } catch(err) { errEl.textContent='Connection error. Email info@compagniedephalsbourgia.com'; errEl.style.display='block'; btn.textContent='Send →'; btn.disabled=false; }
-});
-</script>
 
 <footer>
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div style="font-family:'Syne',sans-serif;font-weight:700;color:white;font-size:1.1rem">★★★ BusinessDigital AI</div>
-        <p>Trusted AI for European enterprise. Official Claude (Anthropic) Partner. Business school in France and Madagascar. Qualiopi certified (RNQ-25/10/2579).</p>
-        <p style="margin-top:.5rem;font-size:.78rem;color:#374151">SIRET 924 152 572 00013 · 54 avenue Hoche, 75008 Paris, France<br>✉ info@compagniedephalsbourgia.com · ☎ +33 7 83 60 90 20</p>
-      </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="/#offer">Sovereignty audit</a></li>
-          <li><a href="/#offer">State-funded training</a></li>
-          <li><a href="/#offer">Sovereign AI hosting</a></li>
-          <li><a href="/enterprise">Enterprise</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="/investors">Investors</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="https://compagniedephalsbourgia.com" target="_blank">Compagnie de Phalsbourg</a></li>
-          <li><a href="mailto:info@compagniedephalsbourgia.com">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 BusinessDigital AI / Croissance Personnelle. All rights reserved.</p>
-      <p style="color:#4b5563;font-size:.78rem">Data sovereign · GDPR compliant · EU AI Act ready</p>
+  <div class="wrap">
+    <div><b>BusinessDigital AI</b><br>Business school in France and Madagascar · Training · Consulting · Sovereign AI data centres<br>54 avenue Hoche, 75008 Paris, France · info@businessdigitalai.com · +33 7 83 60 90 20</div>
+    <div class="foot-links">
+      <a href="/">Home</a><a href="/enterprise">Enterprise</a><a href="/investors">Investors</a><a href="/about">About</a>
     </div>
   </div>
 </footer>
-</body></html>
+
+<script>
+document.getElementById('inv-form').addEventListener('submit',async function(e){
+  e.preventDefault();
+  var btn=document.getElementById('form-btn'),err=document.getElementById('form-err');
+  btn.textContent='Sending…';btn.disabled=true;err.style.display='none';
+  var data=Object.fromEntries(new FormData(this));
+  data._subject_hint='Investor deck request — BusinessDigital AI';
+  try{
+    var r=await fetch('https://bxfwxrlfowjhynpdyqof.supabase.co/functions/v1/submit-audit-businessdigitalai',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+    var j=await r.json();
+    if(j.ok){this.style.display='none';document.getElementById('form-ok').style.display='block';}
+    else{err.textContent='An error occurred. Please contact us on WhatsApp or by email.';err.style.display='block';btn.textContent='Request the deck';btn.disabled=false;}
+  }catch(ex){err.textContent='Connection error. Please contact us on WhatsApp or by email.';err.style.display='block';btn.textContent='Request the deck';btn.disabled=false;}
+});
+</script>
+</body>
+</html>
