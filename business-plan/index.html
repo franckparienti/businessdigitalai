@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Business Plan — BusinessDigital AI</title>
+<meta name="description" content="Series A open. One company owns the whole chain: state-funded training that sources talent and enterprise clients, an AI start-up studio, GLM 5.2 on owned silicon, and sovereign AI data centers on French soil." />
+<link rel="canonical" href="https://businessdigitalai.com/pitch-deck" />
+<meta property="og:title" content="Investor Pitch — BusinessDigital AI" />
+<meta property="og:description" content="We own the talent, the software and the servers. Publicly funded training fills sovereign AI data centers we own." />
+<meta property="og:url" content="https://businessdigitalai.com/pitch-deck" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#0B1420;
+    --ink-deep:#070E17;
+    --panel:#101D2C;
+    --panel-2:#0D1826;
+    --parchment:#EAE6DC;
+    --muted:#98A6B4;
+    --muted-2:#6E7E8E;
+    --blue:#5B8CFF;
+    --gold:#C8A24A;
+    --gold-soft:rgba(200,162,74,.30);
+    --hair:rgba(200,162,74,.22);
+    --hair-cool:rgba(255,255,255,.08);
+    --maxw:1120px;
+    --serif:"Fraunces",Georgia,serif;
+    --sans:"Inter",system-ui,-apple-system,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,monospace;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--ink);color:var(--parchment);
+    font-family:var(--sans);font-size:17px;line-height:1.65;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(1200px 600px at 78% -8%, rgba(91,140,255,.10), transparent 60%),
+      radial-gradient(900px 500px at 8% 12%, rgba(200,162,74,.06), transparent 55%);
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;position:relative;z-index:1}
+  a{color:inherit}
+  h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.01em;line-height:1.08;margin:0}
+  p{margin:0 0 1.05em}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:.7em;margin:0 0 22px}
+  .eyebrow .stars{color:var(--gold);letter-spacing:.12em}
+  .lead{font-size:1.22rem;color:#D7D2C6;max-width:62ch}
+
+  header.nav{position:sticky;top:0;z-index:20;background:rgba(9,15,23,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--hair-cool)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{font-family:var(--serif);font-size:1.06rem;font-weight:600;letter-spacing:.01em;text-decoration:none;display:flex;align-items:center;gap:.55em}
+  .brand .stars{color:var(--gold);font-size:.8em;letter-spacing:.1em}
+  .nav-links{display:flex;align-items:center;gap:26px;font-size:.92rem}
+  .nav-links a{color:var(--muted);text-decoration:none;transition:color .2s}
+  .nav-links a:hover{color:var(--parchment)}
+  .nav-cta{border:1px solid var(--gold-soft);color:var(--gold)!important;padding:8px 16px;border-radius:2px;font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;transition:all .2s}
+  .nav-cta:hover{background:var(--gold);color:var(--ink-deep)!important;border-color:var(--gold)}
+
+  .hero{padding:96px 0 84px;position:relative}
+  .hero-frame{border:1px solid var(--hair);border-radius:3px;padding:56px 52px;position:relative;background:linear-gradient(180deg, rgba(16,29,44,.55), rgba(13,24,38,.25))}
+  .hero-frame::before,.hero-frame::after{content:"";position:absolute;width:14px;height:14px;border:1px solid var(--gold);opacity:.7}
+  .hero-frame::before{top:-1px;left:-1px;border-right:0;border-bottom:0}
+  .hero-frame::after{bottom:-1px;right:-1px;border-left:0;border-top:0}
+  .hero h1{font-size:clamp(2.5rem,5.4vw,4.1rem);max-width:16ch;margin-bottom:24px}
+  .hero h1 em{font-style:italic;color:var(--gold)}
+  .hero .lead{margin-bottom:34px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:40px}
+  .btn{display:inline-flex;align-items:center;gap:.6em;text-decoration:none;padding:14px 26px;border-radius:2px;font-size:.95rem;font-weight:500;transition:all .22s}
+  .btn-primary{background:var(--blue);color:#fff;border:1px solid var(--blue)}
+  .btn-primary:hover{background:#6f9bff;border-color:#6f9bff;transform:translateY(-1px)}
+  .btn-ghost{background:transparent;color:var(--parchment);border:1px solid var(--hair-cool)}
+  .btn-ghost:hover{border-color:var(--muted)}
+  .trust{display:flex;flex-wrap:wrap;gap:10px 24px;font-family:var(--mono);font-size:.76rem;letter-spacing:.06em;color:var(--muted-2);text-transform:uppercase}
+  .trust span{display:inline-flex;align-items:center;gap:.55em}
+  .trust span::before{content:"✓";color:var(--gold)}
+
+  section.band{padding:82px 0;border-top:1px solid var(--hair-cool)}
+  .band.deep{background:var(--ink-deep)}
+  .sec-head{max-width:66ch;margin-bottom:48px}
+  .sec-head h2{font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:18px}
+  .sec-head p{color:var(--muted);font-size:1.08rem}
+
+  .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--hair-cool);border:1px solid var(--hair-cool);border-radius:3px;overflow:hidden;margin-top:40px}
+  .stat{background:var(--panel-2);padding:34px 28px}
+  .stat .n{font-family:var(--serif);font-size:2.6rem;color:var(--gold);line-height:1;margin-bottom:12px}
+  .stat .l{font-size:.95rem;color:var(--muted)}
+
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .step{border:1px solid var(--hair-cool);border-radius:3px;padding:30px 26px;background:var(--panel-2);position:relative}
+  .step .num{font-family:var(--mono);font-size:.8rem;color:var(--gold);letter-spacing:.1em}
+  .step .kw{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+  .step .tag{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);border:1px solid rgba(91,140,255,.3);padding:3px 9px;border-radius:2px;position:absolute;top:26px;right:24px}
+  .step h3{font-size:1.28rem;margin:16px 0 12px}
+  .step p{font-size:.96rem;color:var(--muted);margin-bottom:0}
+
+  .flywheel{margin-top:36px;border-left:2px solid var(--gold-soft);padding:6px 0 6px 26px}
+  .flywheel p{font-size:1.12rem;color:#D7D2C6;max-width:72ch;margin-bottom:0}
+  .flywheel em{color:var(--gold);font-style:normal;font-family:var(--serif)}
+
+  .infra{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .infra-card{border:1px solid var(--hair-cool);border-radius:3px;padding:32px 30px;background:linear-gradient(180deg,var(--panel),var(--panel-2))}
+  .infra-card .k{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:16px}
+  .infra-card h3{font-size:1.35rem;margin-bottom:14px}
+  .infra-card p{color:var(--muted);font-size:.98rem}
+  .infra-card a{color:var(--gold);text-decoration:none;font-size:.9rem;font-family:var(--mono);letter-spacing:.04em}
+  .infra-card a:hover{text-decoration:underline}
+  .partner-note{margin-top:26px;color:var(--muted-2);font-size:.92rem;max-width:80ch}
+  .partner-note a{color:var(--gold);text-decoration:none}
+
+  .phases{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:8px}
+  .phase{border:1px solid var(--hair-cool);border-radius:3px;padding:30px 28px;background:var(--panel-2)}
+  .phase .p{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+  .phase h3{font-size:1.25rem;margin-bottom:12px}
+  .phase p{color:var(--muted);font-size:.96rem;margin-bottom:0}
+
+  .rounds{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .round{border:1px solid var(--hair-cool);border-radius:3px;padding:36px 32px;background:linear-gradient(180deg,var(--panel),var(--panel-2));position:relative}
+  .round.open{border-color:var(--gold-soft);box-shadow:0 0 0 1px var(--gold-soft) inset}
+  .round .status{font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;padding:4px 11px;border-radius:2px;display:inline-block;margin-bottom:22px}
+  .round.open .status{background:var(--gold);color:var(--ink-deep)}
+  .round.planned .status{border:1px solid var(--hair-cool);color:var(--muted)}
+  .round h3{font-size:1.5rem;margin-bottom:6px}
+  .round .sub{color:var(--muted);font-size:.94rem;margin-bottom:26px}
+  .terms{list-style:none;padding:0;margin:0 0 24px;border-top:1px solid var(--hair-cool)}
+  .terms li{display:flex;justify-content:space-between;gap:18px;padding:13px 0;border-bottom:1px solid var(--hair-cool);font-size:.96rem}
+  .terms li span:first-child{color:var(--muted)}
+  .terms li span:last-child{font-family:var(--mono);color:var(--parchment);text-align:right}
+  .terms li .big{font-size:1.15rem;color:var(--gold)}
+  .use{font-size:.94rem;color:var(--muted)}
+  .use strong{color:var(--parchment);font-weight:500}
+
+  .ledger{margin-top:30px;border:1px solid var(--gold-soft);border-radius:3px;padding:30px 32px;background:rgba(200,162,74,.05)}
+  .ledger .k{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+  .ledger-flow{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;font-family:var(--serif)}
+  .ledger-flow .node{font-size:1.15rem}
+  .ledger-flow .node small{display:block;font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;color:var(--muted-2);text-transform:uppercase;margin-top:4px}
+  .ledger-flow .arrow{color:var(--gold);font-family:var(--sans)}
+  .ledger-flow .big{color:var(--gold);font-size:1.5rem}
+  .disclaimer{margin-top:20px;font-size:.8rem;color:var(--muted-2);line-height:1.55;max-width:82ch}
+
+  .team{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:760px}
+  .member{border:1px solid var(--hair-cool);border-radius:3px;padding:30px 26px;background:var(--panel-2)}
+  .member .role{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:14px}
+  .member h3{font-size:1.3rem;margin-bottom:14px}
+  .member p{font-size:.93rem;color:var(--muted);margin-bottom:0}
+  .team-note{margin-top:26px;color:var(--muted-2);font-size:.92rem}
+
+  .final{text-align:center;padding:96px 0}
+  .final h2{font-size:clamp(1.9rem,4vw,2.9rem);max-width:20ch;margin:0 auto 22px}
+  .final p{color:var(--muted);max-width:60ch;margin:0 auto 34px;font-size:1.08rem}
+  .final .cta-row{justify-content:center}
+
+  footer{border-top:1px solid var(--hair-cool);background:var(--ink-deep);padding:52px 0 40px}
+  .foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px;margin-bottom:34px}
+  .foot-brand{max-width:44ch}
+  .foot-brand .brand{margin-bottom:14px}
+  .foot-brand p{font-size:.9rem;color:var(--muted);margin-bottom:0}
+  .foot-links{display:flex;gap:56px;font-size:.9rem}
+  .foot-col a{display:block;color:var(--muted);text-decoration:none;margin-bottom:10px;transition:color .2s}
+  .foot-col a:hover{color:var(--parchment)}
+  .foot-col .h{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+  .foot-legal{border-top:1px solid var(--hair-cool);padding-top:24px;font-size:.8rem;color:var(--muted-2);display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:900px){
+    .stat-row,.steps,.team{grid-template-columns:1fr}
+    .infra,.phases,.rounds{grid-template-columns:1fr}
+    .hero-frame{padding:40px 26px}
+    .nav-links a:not(.nav-cta){display:none}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+  }
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="https://businessdigitalai.com/"><span class="stars">★★★</span> BusinessDigital AI</a>
+    <nav class="nav-links">
+      <a href="https://businessdigitalai.com/enterprise">Enterprise</a>
+      <a href="https://businessdigitalai.com/investors">Investors</a>
+      <a href="https://businessdigitalai.com/about">About</a>
+      <a class="nav-cta" href="#phase1">Start the 90-day proof</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-frame reveal">
+        <p class="eyebrow"><span class="stars">★★★</span> Business plan · Companion to the Series A deck</p>
+        <h1>Fifteen million euros. <em>One megawatt</em> of sovereign AI.</h1>
+        <p class="lead">One integrated programme: we train European enterprises on trusted AI with public money, and we deploy the megawatt of French compute those same enterprises will rent from us. The demand is created before the capacity is bought. Everything here is built to be verified, starting with a ninety-day proof that costs a fraction of the round.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#phase1">Start with the 90-day proof →</a>
+          <a class="btn btn-ghost" href="https://businessdigitalai.com/pitch-deck">Back to the pitch deck</a>
+        </div>
+        <div class="trust">
+          <span>Qualiopi certified (RNQ-25/10/2579)</span>
+          <span>Registered partner, Anthropic Claude Partner Network</span>
+          <span>Data Hills · Aulnay-sous-Bois · 240 MW site</span>
+          <span>French soil, GDPR &amp; NIS2</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band deep">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>The thesis, in one paragraph.</h2>
+        <p>Compute can be bought by anyone with capital. What cannot be bought is being in the room with the enterprise on the day it decides where its AI will run.</p>
+      </div>
+      <div class="flywheel reveal">
+        <p>The French state and the European Social Fund pay us to sit inside enterprises and teach them how to deploy trusted AI. The client pays nothing. We are <em>paid to acquire the account</em>. Months later, that same enterprise needs somewhere sovereign to run the system we taught it to build. We own that somewhere. Training is not the business. Training is the only publicly funded customer acquisition channel in the AI infrastructure market.</p>
+      </div>
+      <div class="stat-row reveal">
+        <div class="stat"><div class="n">7%</div><div class="l">Of global turnover: the maximum AI Act penalty that turns this into a board decision rather than an IT decision.</div></div>
+        <div class="stat"><div class="n">100%</div><div class="l">Of our training revenue covered by public funds. No credit risk, and no acquisition cost paid out of the round.</div></div>
+        <div class="stat"><div class="n">240 MW</div><div class="l">Planned IT capacity at the site our partner is developing. We start with one megawatt of it.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>What fifteen million euros does.</h2>
+        <p>One programme, not a list of line items. The round buys a working commercial machine and the first megawatt of capacity it fills, delivered together because neither is worth much without the other.</p>
+      </div>
+      <div class="steps reveal">
+        <div class="step">
+          <div class="num">01</div>
+          <h3>We put the demand in place</h3>
+          <p>The accredited school scales its funded cohorts, the outbound and paid-search engine runs at full intensity across France and continental Europe, and the enterprise pipeline is built before a single accelerator is purchased. Public funding covers the workforce, so this phase does not consume the round the way a classic sales build would.</p>
+        </div>
+        <div class="step">
+          <div class="num">02</div>
+          <h3>We deploy the megawatt</h3>
+          <p>Capacity is acquired at Data Hills with Compagnie de Phalsbourg, sized at approximately one megawatt of AI-ready compute: accelerators, liquid cooling, high-voltage connection and the tranche of building that houses them. The hardware is bought once the tenants exist, not before.</p>
+        </div>
+        <div class="step">
+          <div class="num">03</div>
+          <h3>The trained clients become the tenants</h3>
+          <p>Enterprises we trained migrate their AI workloads onto our capacity under contract. Revenue becomes recurring at infrastructure margins, and the cash it generates funds the next tranche on the same 240 MW site without returning to the market.</p>
+        </div>
+      </div>
+      <div class="ledger reveal">
+        <div class="k">The loop</div>
+        <div class="ledger-flow">
+          <div class="node">Public funding<small>pays for the account</small></div><div class="arrow">→</div>
+          <div class="node">Trained enterprise<small>needs sovereign hosting</small></div><div class="arrow">→</div>
+          <div class="node">Our megawatt<small>recurring contract</small></div><div class="arrow">→</div>
+          <div class="node big">Next tranche<small>funded by the last</small></div>
+        </div>
+        <p class="disclaimer">Capacity sizing is indicative. At current market reference pricing of roughly twenty million dollars per AI-ready megawatt, fifteen million euros funds on the order of eight tenths of a megawatt; our procurement partnerships are what we expect to close the gap to a full megawatt. Final capacity depends on hardware pricing, energy contracts and construction schedule at the time of deployment.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band deep">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>What the market is paying for the two halves we are combining.</h2>
+        <p>Two French transactions frame the value of each side of this model. Figures are as publicly reported, cited for orientation, and are not our valuation basis.</p>
+      </div>
+      <div class="infra reveal">
+        <div class="infra-card">
+          <div class="k">The infrastructure half</div>
+          <h3>Exaion — approx. €328M</h3>
+          <p>A French sovereign AI and HPC infrastructure operator, subsidiary of EDF, acquired by the American group MARA Holdings at a reported valuation of around 358 million dollars. A sovereign compute asset with no proprietary demand channel of its own, now under American ownership — precisely the outcome European sovereignty policy exists to prevent, and one that reopened the debate in France.</p>
+        </div>
+        <div class="infra-card">
+          <div class="k">The demand half</div>
+          <h3>Artefact — above €1bn</h3>
+          <p>A French AI and data consulting firm, valued above one billion euros in its reported July 2025 LBO with the British fund Cinven. A demand-side business with no infrastructure of its own, priced at roughly three times the sovereign compute asset above.</p>
+        </div>
+      </div>
+      <div class="flywheel reveal">
+        <p>The infrastructure without the demand sold for a third of what the demand without the infrastructure was worth. <em>We are building both inside the same entity</em>, with the publicly funded training layer feeding the hosting layer.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>The asset: Data Hills, Aulnay-sous-Bois.</h2>
+        <p>Our partner Compagnie de Phalsbourg is developing one of the largest data centre projects in the Paris region. Nothing in this section is our projection. Everything below comes from two independent public sources: the environmental authority opinion of the MRAe Île-de-France, avis n° APJIF-2025-004 of 12 February 2025, for the technical parameters, and the official project page of the City of Aulnay-sous-Bois for the developer, the public policy context and the delivery date.</p>
+      </div>
+
+      <div class="steps reveal">
+        <div class="step">
+          <div class="num">01</div>
+          <h3>The site</h3>
+          <p>12.1 hectares of industrial brownfield at 1 and 47 boulevard André Citroën, in the north of Aulnay-sous-Bois in Seine-Saint-Denis, around ten kilometres north-east of Paris. Held by SNC Data Hills. Formerly a PSA Citroën vehicle construction and assembly site, today carrying an empty warehouse, administrative offices, the Conservatoire Citroën museum, a disused training centre and a concrete plant, all to be demolished.</p>
+        </div>
+        <div class="step">
+          <div class="num">02</div>
+          <h3>The surroundings</h3>
+          <p>Bordered to the north by the A1 and A3 motorways, to the west by an established industrial estate, and to the south and east by the Parc départemental du Sausset, part of the Seine-Saint-Denis Natura 2000 special protection area. The nearest housing sits 780 metres south. A second data centre project, Data Fifty, is being developed nearby: this is becoming a cluster, not an isolated build.</p>
+        </div>
+        <div class="step">
+          <div class="num">03</div>
+          <h3>The buildings</h3>
+          <p>Around 56,000 m² of ground footprint. Three main buildings totalling 51,726 m², containing 42 computer rooms — fourteen per building — and slightly over 21,000 equipment racks. A separate 2,500 m² plot carries two electrical transformer buildings, plus three security posts and some 25,000 m² of roads, pavements, a loading dock and a decanting area.</p>
+        </div>
+      </div>
+
+      <div class="infra reveal" style="margin-top:22px">
+        <div class="infra-card">
+          <div class="k">Power</div>
+          <h3>240 MW, running 24/7/365</h3>
+          <p>The computer rooms are designed for 240 MW of stable, permanent supply. Voltage stabilisation and micro-cut protection are handled per building by 33 IT battery systems of 2 MW, 33 mechanical systems of 250 kW and four of 300 kW, plus two landlord systems of 180 kW — 75.81 MW per building and 227.43 MW across the site.</p>
+        </div>
+        <div class="infra-card">
+          <div class="k">Grid connection</div>
+          <h3>Double 225 kV to the RTE network</h3>
+          <p>A double underground 225,000-volt link provides the primary supply and the backup feed, connected by tap-off from the overhead Primevères–Sausset n°1 line roughly 1.5 km south-east of the site. RTE connection works are scheduled from March 2026 to April 2029, and a dedicated high-voltage substation is built on site.</p>
+        </div>
+        <div class="infra-card">
+          <div class="k">Backup</div>
+          <h3>48 hours of full-load autonomy</h3>
+          <p>114 generators totalling around 240 MW run on hydrotreated vegetable oil rather than diesel. Fuel is held in 45 buried tanks of 100 m³ and 114 above-ground tanks of 2.5 m³, for 4,785 m³ of HVO stored on site, giving 48 hours of autonomy at full load. Batteries cover micro-cuts before the generators take over.</p>
+        </div>
+        <div class="infra-card">
+          <div class="k">Heat and environment</div>
+          <h3>Waste heat exported, not vented</h3>
+          <p>A 2,212 m² heat-pump centre exports waste heat off site. Roofs carry 17,700 m² of vegetation or photovoltaic panels. The site includes 28,600 m² of landscaped open ground, 7,200 m² of retention and landscape basins, 176 permeable parking spaces of which 39 have EV chargers, and a 2,300 m² bicycle facility.</p>
+        </div>
+      </div>
+
+      <div class="sec-head reveal" style="margin-top:56px">
+        <h2>The build schedule.</h2>
+        <p>Construction was filed to begin at the end of 2025 or the start of 2026, in four phases running to 2040. Capacity therefore arrives in tranches, which is what allows a fifteen million euro position to be a real one rather than a promise.</p>
+      </div>
+      <div class="steps reveal">
+        <div class="step">
+          <div class="kw">Phase 1 · one year</div>
+          <h3>Demolition and soil treatment</h3>
+          <p>Removal of the existing PSA structures and remediation of the ground across the full 12.1 hectares.</p>
+        </div>
+        <div class="step">
+          <div class="kw">Phase 2 · 2025 → 2027</div>
+          <h3>West building and first heat pump</h3>
+          <p>The first of the three main buildings, together with the first technical block housing a heat pump. The City of Aulnay-sous-Bois confirms first-phase delivery in 2027. This is the tranche against which a first position is taken.</p>
+        </div>
+        <div class="step">
+          <div class="kw">Phase 3 · 2027 → 2032</div>
+          <h3>Central building, RTE substation, transformers</h3>
+          <p>The second main building, a second heat-pump block, the RTE substation and the transformers. Phase 4 then runs from 2032 to 2040 for the final building, the third heat pump and the last two transformers.</p>
+        </div>
+      </div>
+
+      <div class="ledger reveal">
+        <div class="k">Regulatory status</div>
+        <p style="margin-bottom:0">The project is subject to full environmental assessment under three headings of the French environmental code: heading 1 as a classified installation, under IED heading 3110, for combustion capacity above 50 MW thermal; heading 32 for an electrical line and transformer substation above 63,000 volts, the project being at 225,000 volts; and heading 39 for works on a site above ten hectares, the project covering 12.1. A separate water-law filing applies under heading 2.1.5.0 for rainwater discharge. The environmental authority opinion has been issued and is public.</p>
+      </div>
+
+      <div class="infra reveal" style="margin-top:22px">
+        <div class="infra-card">
+          <div class="k">Confirmed by the municipality</div>
+          <h3>Carried by Compagnie de Phalsbourg</h3>
+          <p>The City of Aulnay-sous-Bois names Compagnie de Phalsbourg as the developer of Data Hills on its official InnovVal project page, and states that the first phase is scheduled for delivery in 2027. The same page sets out the public policy behind it: the French state is actively seeking data centre capacity to support the expansion of digital activity, and the municipality expects the arrival of a data centre to attract a cluster of e-tech companies around it, with an architecturally ambitious gateway to the city.</p>
+          <p><a href="https://www.aulnay-sous-bois.fr/grands-projets/val-francilia/innovval-le-pole-economique-de-demain/" target="_blank" rel="noopener">Read the InnovVal project page →</a></p>
+        </div>
+        <div class="infra-card">
+          <div class="k">Why it matters here</div>
+          <h3>The counterparty is documented, not asserted</h3>
+          <p>An investor evaluating this plan does not have to take our word for the asset, the developer or the schedule. The technical envelope is in a published environmental authority opinion, the developer and the 2027 delivery date are on a municipal website, and the site sits inside a designated economic development zone with state backing. What remains to be executed, and is a defined milestone of the Series A, is the co-investment agreement between BusinessDigital AI and Compagnie de Phalsbourg on the first tranche.</p>
+        </div>
+      </div>
+      <p class="partner-note">Compagnie de Phalsbourg, founded by Philippe JOURNO, is our real-estate and infrastructure partner, with a portfolio approaching one million square metres available for conversion to sovereign AI capacity. A second campus is planned around the Ecotone project near Sophia-Antipolis, designed by Jean Nouvel. See <a href="https://compagniedephalsbourgia.com" target="_blank" rel="noopener">compagniedephalsbourgia.com</a> and the <a href="https://www.aulnay-sous-bois.fr/grands-projets/val-francilia/innovval-le-pole-economique-de-demain/" target="_blank" rel="noopener">City of Aulnay-sous-Bois InnovVal page</a>.</p>
+    </div>
+  </section>
+
+  <section class="band deep">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>The economics of a megawatt.</h2>
+        <p>AI capacity is priced by the megawatt, not by the square metre. Market references put a standard AI-ready megawatt at roughly twenty million dollars all-in, and a fifty megawatt site at around one billion.</p>
+      </div>
+      <div class="phases reveal">
+        <div class="phase">
+          <div class="p">Where the money goes</div>
+          <h3>Compute dominates, real estate does not</h3>
+          <p>Roughly sixty percent of the cost is the compute hardware itself — a single high-density AI rack runs between half a million and nine million dollars depending on accelerator count. Around twenty-five percent covers electrical infrastructure and liquid cooling, which AI thermal density makes unavoidable. Land and construction account for about fifteen percent, the smallest line, which is the reverse of a traditional data centre.</p>
+        </div>
+        <div class="phase">
+          <div class="p">Why our cost base is lower</div>
+          <h3>Procurement partnerships</h3>
+          <p>Hardware pricing moves fast and generally downward per unit of performance. Our partnership with Equinix brings AI data centre engineering expertise, and our Lenovo partnership gives access to configurations materially cheaper than buying Nvidia boards at list price. We stay multi-vendor across Nvidia and alternatives to control both cost and supply.</p>
+        </div>
+      </div>
+      <div class="stat-row reveal">
+        <div class="stat"><div class="n">15–20%</div><div class="l">Targeted operational yield on dedicated AI compute.</div></div>
+        <div class="stat"><div class="n">18–22%</div><div class="l">Targeted project IRR over ten years.</div></div>
+        <div class="stat"><div class="n">≈ 0.4%</div><div class="l">Share of the 240 MW site our first megawatt represents. The runway above us is the point.</div></div>
+      </div>
+      <p class="disclaimer">Capacity, yield and IRR figures are indicative, based on market reference pricing, and subject to hardware costs, energy contracts, construction schedule and due diligence. They are not a forecast or a guarantee of returns.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Why France, and why now.</h2>
+        <p>France has become the natural European location for AI compute for three structural reasons, and the window in which enterprise relationships are formed is closing.</p>
+      </div>
+      <div class="steps reveal">
+        <div class="step">
+          <div class="num">01</div>
+          <h3>Cheap decarbonised power</h3>
+          <p>Nuclear-heavy generation gives France some of the lowest and least carbon-intensive industrial electricity prices in Western Europe. For an asset whose largest operating cost is electricity over a ten-year life, that difference compounds. It is why international operators have announced tens of billions of euros of AI infrastructure investment in France since 2025.</p>
+        </div>
+        <div class="step">
+          <div class="num">02</div>
+          <h3>Engineering depth</h3>
+          <p>A deep pool of engineers, and through our own accredited school and the Madagascar hub, a proprietary pipeline that trains and places them at roughly forty percent of French operational cost.</p>
+        </div>
+        <div class="step">
+          <div class="num">03</div>
+          <h3>Regulation forcing the decision</h3>
+          <p>The Cloud Act and Patriot Act expose data held by American providers to US authorities wherever it sits. The AI Act adds obligations carrying penalties up to seven percent of global turnover. European enterprises must act on a deadline they did not choose, and open-weight models now make self-hosting a viable production choice rather than a downgrade.</p>
+        </div>
+      </div>
+      <div class="flywheel reveal">
+        <p>Capacity is being built by others. The question that decides who captures the recurring revenue is <em>who holds the enterprise relationship when that capacity comes online</em>. An enterprise that has already chosen is a closed decision. An enterprise we trained six months earlier is a decision we helped design.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band deep">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Financial projections.</h2>
+        <p>Indicative and tied to the Series A milestones. Colocation revenue starts partial in 2027 and reaches full first-tranche occupancy in 2028.</p>
+      </div>
+      <div class="steps reveal">
+        <div class="step">
+          <div class="kw">2027 · Ramp-up</div>
+          <h3>€3.0M revenue</h3>
+          <p>Training €1.2M · Colocation €1.8M · EBITDA €0.9M at 30%. First tranche partially operational, training scaled through the public funding pipeline.</p>
+        </div>
+        <div class="step">
+          <div class="kw">2028 · Scale</div>
+          <h3>€11.2M revenue</h3>
+          <p>Training €3.5M · Colocation €7.2M · Studio equity €0.5M · EBITDA €4.5M at 40%. First tranche at full occupancy, first studio equity gains.</p>
+        </div>
+        <div class="step">
+          <div class="kw">2029 · Expansion</div>
+          <h3>€22.5M revenue</h3>
+          <p>Training €7.0M · Colocation €14.0M · Studio equity €1.5M · EBITDA €10.1M at 45%. Second tranche partial, Africa deployment via the Madagascar hub live.</p>
+        </div>
+      </div>
+      <p class="disclaimer">Underlying assumptions: training gross margin 65%, conversion rate 12% on qualified leads, data centre operational yield 15 to 20%, project IRR 18 to 22% over ten years. Figures are indicative and subject to due diligence. The weakest of these is the 12% conversion rate, because it is the only one asserted rather than measured. The next section exists to replace it with a number.</p>
+    </div>
+  </section>
+
+  <section class="band" id="phase1">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Step one: ninety days, fifty thousand euros.</h2>
+        <p>A business plan for fifteen million euros is an argument. Ninety days of open commercial data is evidence. We produce the evidence first, at a cost immaterial against the round, and the round is discussed afterwards on measured numbers.</p>
+      </div>
+      <div class="phases reveal">
+        <div class="phase">
+          <div class="p">What we run</div>
+          <h3>The acquisition engine at full intensity</h3>
+          <p>Fifty production days of outbound calling by a dedicated team in France and Madagascar. Five thousand decision-makers dialled through an automatic dialer that connects an operator only on pick-up. A Google Ads programme across France and continental Europe, where cost per click on enterprise AI keywords runs roughly four times lower than in the United States. Every call recorded, transcribed, and turned into a costed written proposal the same day.</p>
+        </div>
+        <div class="phase">
+          <div class="p">What it proves</div>
+          <h3>A measured cost of acquisition</h3>
+          <p>A committed floor of 120 qualified meetings, a target of four per production day and 150 to 200 over the quarter, plus around 100 inbound leads. In the central case that is roughly 200,000 euros of signed training revenue and a measured acquisition cost of about 2,000 euros for an 8,000 euro recurring contract. A live dashboard is open to the investor from day one.</p>
+        </div>
+      </div>
+      <div class="flywheel reveal">
+        <p>Step one is a services engagement, not a financing mandate, and triggers no advisory or structuring fees. The fifty thousand euros is <em>deductible from the Series A closing or convertible at the round price</em>, at the investor's option. If the round does not proceed, the engagement ends at day ninety and BusinessDigital AI keeps the pipeline.</p>
+      </div>
+      <p class="partner-note">The same engine is described in detail, with its commitments and worked examples, on our <a href="https://businessdigitalai.com/growth-engine">growth engine page</a>.</p>
+    </div>
+  </section>
+
+  <section class="band deep">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Principal risks.</h2>
+        <p>Stated plainly, because they are the questions any serious investor asks in the first hour.</p>
+      </div>
+      <div class="infra reveal">
+        <div class="infra-card">
+          <div class="k">Schedule</div>
+          <h3>Construction dependency</h3>
+          <p>Colocation revenue depends on the Data Hills delivery timetable and on the RTE grid connection scheduled to complete in April 2029. Tranche availability, not demand, is the binding constraint on the infrastructure line, which is why the round is drawn against milestones rather than in one go.</p>
+        </div>
+        <div class="infra-card">
+          <div class="k">Funding rules</div>
+          <h3>Public scheme volatility</h3>
+          <p>French and European training funding rules change annually and several 2026 schemes have already closed. We operate across multiple funding channels rather than depending on one, and the offer is designed to remain saleable outside public funding if required.</p>
+        </div>
+        <div class="infra-card">
+          <div class="k">Hardware</div>
+          <h3>Pricing and supply</h3>
+          <p>Accelerator pricing and availability move sharply in both directions. Capacity figures here are indicative at current reference pricing. Multi-vendor procurement is the mitigation, and buying only once tenants exist is the structural protection.</p>
+        </div>
+        <div class="infra-card">
+          <div class="k">Regulation</div>
+          <h3>Interpretation risk</h3>
+          <p>AI Act interpretation continues to evolve. This affects how the offer is framed far more than whether demand exists, and our status as an accredited training body gives us early sight of guidance changes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="request">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Next step.</h2>
+        <p>Read this alongside the deck, then take the ninety-day proof. The detailed financial model, capitalisation table and tranche mechanics are available under NDA.</p>
+      </div>
+      <div class="cta-row reveal">
+        <a class="btn btn-primary" href="https://wa.me/33783609020" target="_blank" rel="noopener">Talk to Franck PARIENTI →</a>
+        <a class="btn btn-ghost" href="https://businessdigitalai.com/pitch-deck">Back to the pitch deck</a>
+      </div>
+      <p class="partner-note">BusinessDigital AI · 54 avenue Hoche, 75008 Paris, France · Qualiopi certified RNQ-25/10/2579</p>
+      <p class="disclaimer">This page is a summary prepared for discussion. It does not constitute an offer to sell, or a solicitation to buy, securities, nor investment advice. Valuations, round sizes, capacity and equity percentages are indicative, pre-negotiation and subject to due diligence and definitive documentation. Third-party transaction values are as publicly reported and cited for orientation only. Data Hills technical parameters are taken from MRAe Île-de-France opinion n° APJIF-2025-004 of 12 February 2025; the developer and the 2027 first-phase delivery date are as published by the City of Aulnay-sous-Bois. Both describe the project itself and do not constitute a commitment to BusinessDigital AI, the co-investment agreement being a defined milestone of the Series A.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="brand" href="https://businessdigitalai.com/"><span class="stars">★★★</span> BusinessDigital AI</a>
+        <p>Trusted AI for European enterprise. Official Claude (Anthropic) Partner. AI Business School in France and Madagascar. Qualiopi certified (RNQ-25/10/2579). 54 avenue Hoche, 75008 Paris, France.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <div class="h">Company</div>
+          <a href="https://businessdigitalai.com/investors">Investors</a>
+          <a href="https://businessdigitalai.com/enterprise">Enterprise</a>
+          <a href="https://businessdigitalai.com/about">About</a>
+        </div>
+        <div class="foot-col">
+          <div class="h">Partners</div>
+          <a href="https://compagniedephalsbourgia.com" target="_blank" rel="noopener">Compagnie de Phalsbourg</a>
+          <a href="https://businessdigital.fr" target="_blank" rel="noopener">BusinessDigital.fr</a>
+          <a href="https://wa.me/33783609020" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 BusinessDigital AI. All rights reserved.</span>
+      <span>Data sovereign · GDPR compliant · EU AI Act ready</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(function(e){e.classList.add('in')}); return; }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, {threshold:0.12, rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(e){ io.observe(e); });
+  })();
+</script>
+</body>
+</html>

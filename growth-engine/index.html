@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Growth Engine — BusinessDigital AI</title>
+<meta name="description" content="Series A open. One company owns the whole chain: state-funded training that sources talent and enterprise clients, an AI start-up studio, GLM 5.2 on owned silicon, and sovereign AI data centers on French soil." />
+<link rel="canonical" href="https://businessdigitalai.com/pitch-deck" />
+<meta property="og:title" content="Investor Pitch — BusinessDigital AI" />
+<meta property="og:description" content="We own the talent, the software and the servers. Publicly funded training fills sovereign AI data centers we own." />
+<meta property="og:url" content="https://businessdigitalai.com/pitch-deck" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#0B1420;
+    --ink-deep:#070E17;
+    --panel:#101D2C;
+    --panel-2:#0D1826;
+    --parchment:#EAE6DC;
+    --muted:#98A6B4;
+    --muted-2:#6E7E8E;
+    --blue:#5B8CFF;
+    --gold:#C8A24A;
+    --gold-soft:rgba(200,162,74,.30);
+    --hair:rgba(200,162,74,.22);
+    --hair-cool:rgba(255,255,255,.08);
+    --maxw:1120px;
+    --serif:"Fraunces",Georgia,serif;
+    --sans:"Inter",system-ui,-apple-system,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,monospace;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--ink);color:var(--parchment);
+    font-family:var(--sans);font-size:17px;line-height:1.65;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(1200px 600px at 78% -8%, rgba(91,140,255,.10), transparent 60%),
+      radial-gradient(900px 500px at 8% 12%, rgba(200,162,74,.06), transparent 55%);
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;position:relative;z-index:1}
+  a{color:inherit}
+  h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.01em;line-height:1.08;margin:0}
+  p{margin:0 0 1.05em}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:.7em;margin:0 0 22px}
+  .eyebrow .stars{color:var(--gold);letter-spacing:.12em}
+  .lead{font-size:1.22rem;color:#D7D2C6;max-width:62ch}
+
+  header.nav{position:sticky;top:0;z-index:20;background:rgba(9,15,23,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--hair-cool)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{font-family:var(--serif);font-size:1.06rem;font-weight:600;letter-spacing:.01em;text-decoration:none;display:flex;align-items:center;gap:.55em}
+  .brand .stars{color:var(--gold);font-size:.8em;letter-spacing:.1em}
+  .nav-links{display:flex;align-items:center;gap:26px;font-size:.92rem}
+  .nav-links a{color:var(--muted);text-decoration:none;transition:color .2s}
+  .nav-links a:hover{color:var(--parchment)}
+  .nav-cta{border:1px solid var(--gold-soft);color:var(--gold)!important;padding:8px 16px;border-radius:2px;font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;transition:all .2s}
+  .nav-cta:hover{background:var(--gold);color:var(--ink-deep)!important;border-color:var(--gold)}
+
+  .hero{padding:96px 0 84px;position:relative}
+  .hero-frame{border:1px solid var(--hair);border-radius:3px;padding:56px 52px;position:relative;background:linear-gradient(180deg, rgba(16,29,44,.55), rgba(13,24,38,.25))}
+  .hero-frame::before,.hero-frame::after{content:"";position:absolute;width:14px;height:14px;border:1px solid var(--gold);opacity:.7}
+  .hero-frame::before{top:-1px;left:-1px;border-right:0;border-bottom:0}
+  .hero-frame::after{bottom:-1px;right:-1px;border-left:0;border-top:0}
+  .hero h1{font-size:clamp(2.5rem,5.4vw,4.1rem);max-width:16ch;margin-bottom:24px}
+  .hero h1 em{font-style:italic;color:var(--gold)}
+  .hero .lead{margin-bottom:34px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:40px}
+  .btn{display:inline-flex;align-items:center;gap:.6em;text-decoration:none;padding:14px 26px;border-radius:2px;font-size:.95rem;font-weight:500;transition:all .22s}
+  .btn-primary{background:var(--blue);color:#fff;border:1px solid var(--blue)}
+  .btn-primary:hover{background:#6f9bff;border-color:#6f9bff;transform:translateY(-1px)}
+  .btn-ghost{background:transparent;color:var(--parchment);border:1px solid var(--hair-cool)}
+  .btn-ghost:hover{border-color:var(--muted)}
+  .trust{display:flex;flex-wrap:wrap;gap:10px 24px;font-family:var(--mono);font-size:.76rem;letter-spacing:.06em;color:var(--muted-2);text-transform:uppercase}
+  .trust span{display:inline-flex;align-items:center;gap:.55em}
+  .trust span::before{content:"✓";color:var(--gold)}
+
+  section.band{padding:82px 0;border-top:1px solid var(--hair-cool)}
+  .band.deep{background:var(--ink-deep)}
+  .sec-head{max-width:66ch;margin-bottom:48px}
+  .sec-head h2{font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:18px}
+  .sec-head p{color:var(--muted);font-size:1.08rem}
+
+  .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--hair-cool);border:1px solid var(--hair-cool);border-radius:3px;overflow:hidden;margin-top:40px}
+  .stat{background:var(--panel-2);padding:34px 28px}
+  .stat .n{font-family:var(--serif);font-size:2.6rem;color:var(--gold);line-height:1;margin-bottom:12px}
+  .stat .l{font-size:.95rem;color:var(--muted)}
+
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .step{border:1px solid var(--hair-cool);border-radius:3px;padding:30px 26px;background:var(--panel-2);position:relative}
+  .step .num{font-family:var(--mono);font-size:.8rem;color:var(--gold);letter-spacing:.1em}
+  .step .kw{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+  .step .tag{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);border:1px solid rgba(91,140,255,.3);padding:3px 9px;border-radius:2px;position:absolute;top:26px;right:24px}
+  .step h3{font-size:1.28rem;margin:16px 0 12px}
+  .step p{font-size:.96rem;color:var(--muted);margin-bottom:0}
+
+  .flywheel{margin-top:36px;border-left:2px solid var(--gold-soft);padding:6px 0 6px 26px}
+  .flywheel p{font-size:1.12rem;color:#D7D2C6;max-width:72ch;margin-bottom:0}
+  .flywheel em{color:var(--gold);font-style:normal;font-family:var(--serif)}
+
+  .infra{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .infra-card{border:1px solid var(--hair-cool);border-radius:3px;padding:32px 30px;background:linear-gradient(180deg,var(--panel),var(--panel-2))}
+  .infra-card .k{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:16px}
+  .infra-card h3{font-size:1.35rem;margin-bottom:14px}
+  .infra-card p{color:var(--muted);font-size:.98rem}
+  .infra-card a{color:var(--gold);text-decoration:none;font-size:.9rem;font-family:var(--mono);letter-spacing:.04em}
+  .infra-card a:hover{text-decoration:underline}
+  .partner-note{margin-top:26px;color:var(--muted-2);font-size:.92rem;max-width:80ch}
+  .partner-note a{color:var(--gold);text-decoration:none}
+
+  .phases{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:8px}
+  .phase{border:1px solid var(--hair-cool);border-radius:3px;padding:30px 28px;background:var(--panel-2)}
+  .phase .p{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+  .phase h3{font-size:1.25rem;margin-bottom:12px}
+  .phase p{color:var(--muted);font-size:.96rem;margin-bottom:0}
+
+  .rounds{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .round{border:1px solid var(--hair-cool);border-radius:3px;padding:36px 32px;background:linear-gradient(180deg,var(--panel),var(--panel-2));position:relative}
+  .round.open{border-color:var(--gold-soft);box-shadow:0 0 0 1px var(--gold-soft) inset}
+  .round .status{font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;padding:4px 11px;border-radius:2px;display:inline-block;margin-bottom:22px}
+  .round.open .status{background:var(--gold);color:var(--ink-deep)}
+  .round.planned .status{border:1px solid var(--hair-cool);color:var(--muted)}
+  .round h3{font-size:1.5rem;margin-bottom:6px}
+  .round .sub{color:var(--muted);font-size:.94rem;margin-bottom:26px}
+  .terms{list-style:none;padding:0;margin:0 0 24px;border-top:1px solid var(--hair-cool)}
+  .terms li{display:flex;justify-content:space-between;gap:18px;padding:13px 0;border-bottom:1px solid var(--hair-cool);font-size:.96rem}
+  .terms li span:first-child{color:var(--muted)}
+  .terms li span:last-child{font-family:var(--mono);color:var(--parchment);text-align:right}
+  .terms li .big{font-size:1.15rem;color:var(--gold)}
+  .use{font-size:.94rem;color:var(--muted)}
+  .use strong{color:var(--parchment);font-weight:500}
+
+  .ledger{margin-top:30px;border:1px solid var(--gold-soft);border-radius:3px;padding:30px 32px;background:rgba(200,162,74,.05)}
+  .ledger .k{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+  .ledger-flow{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;font-family:var(--serif)}
+  .ledger-flow .node{font-size:1.15rem}
+  .ledger-flow .node small{display:block;font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;color:var(--muted-2);text-transform:uppercase;margin-top:4px}
+  .ledger-flow .arrow{color:var(--gold);font-family:var(--sans)}
+  .ledger-flow .big{color:var(--gold);font-size:1.5rem}
+  .disclaimer{margin-top:20px;font-size:.8rem;color:var(--muted-2);line-height:1.55;max-width:82ch}
+
+  .team{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:760px}
+  .member{border:1px solid var(--hair-cool);border-radius:3px;padding:30px 26px;background:var(--panel-2)}
+  .member .role{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:14px}
+  .member h3{font-size:1.3rem;margin-bottom:14px}
+  .member p{font-size:.93rem;color:var(--muted);margin-bottom:0}
+  .team-note{margin-top:26px;color:var(--muted-2);font-size:.92rem}
+
+  .final{text-align:center;padding:96px 0}
+  .final h2{font-size:clamp(1.9rem,4vw,2.9rem);max-width:20ch;margin:0 auto 22px}
+  .final p{color:var(--muted);max-width:60ch;margin:0 auto 34px;font-size:1.08rem}
+  .final .cta-row{justify-content:center}
+
+  footer{border-top:1px solid var(--hair-cool);background:var(--ink-deep);padding:52px 0 40px}
+  .foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px;margin-bottom:34px}
+  .foot-brand{max-width:44ch}
+  .foot-brand .brand{margin-bottom:14px}
+  .foot-brand p{font-size:.9rem;color:var(--muted);margin-bottom:0}
+  .foot-links{display:flex;gap:56px;font-size:.9rem}
+  .foot-col a{display:block;color:var(--muted);text-decoration:none;margin-bottom:10px;transition:color .2s}
+  .foot-col a:hover{color:var(--parchment)}
+  .foot-col .h{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+  .foot-legal{border-top:1px solid var(--hair-cool);padding-top:24px;font-size:.8rem;color:var(--muted-2);display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:900px){
+    .stat-row,.steps,.team{grid-template-columns:1fr}
+    .infra,.phases,.rounds{grid-template-columns:1fr}
+    .hero-frame{padding:40px 26px}
+    .nav-links a:not(.nav-cta){display:none}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+  }
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="https://businessdigitalai.com/"><span class="stars">★★★</span> BusinessDigital AI</a>
+    <nav class="nav-links">
+      <a href="https://businessdigitalai.com/enterprise">Enterprise</a>
+      <a href="https://businessdigitalai.com/investors">Investors</a>
+      <a href="https://businessdigitalai.com/about">About</a>
+      <a class="nav-cta" href="https://wa.me/33783609020">Book the session</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-frame reveal">
+        <p class="eyebrow"><span class="stars">★★★</span> Go-to-market engine · Europe, Eurasia &amp; GCC</p>
+        <h1>We book <em>four qualified meetings a day</em> with European enterprise decision-makers.</h1>
+        <p class="lead">American AI companies stall in Europe for one reason: nobody is picking up the phone. We run the outbound team, the dialer, the data and the paid search, from France and Madagascar, on a ninety-day programme with a committed number of meetings. First calls within ten working days. First meetings within fourteen.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://wa.me/33783609020" target="_blank" rel="noopener">Book the strategy call →</a>
+          <a class="btn btn-ghost" href="#numbers">See the numbers</a>
+        </div>
+        <div class="trust">
+          <span>50 prospects dialled per session</span>
+          <span>4 qualified meetings per production day</span>
+          <span>Live dashboard from day one</span>
+          <span>GDPR compliant</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band deep">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Six reasons to read this page to the end.</h2>
+        <p>This offer is built for one situation. If it is not yours, stop here.</p>
+      </div>
+      <div class="steps reveal">
+        <div class="step"><div class="num">01</div><h3>You sell AI or software to enterprises</h3><p>Your product works. Your American pipeline works. Europe, Turkey and the Gulf are on the roadmap and nothing is happening there.</p></div>
+        <div class="step"><div class="num">02</div><h3>Your European pipeline is empty</h3><p>Inbound trickles in. Nobody is doing outbound in the local language, in the local time zone, at volume.</p></div>
+        <div class="step"><div class="num">03</div><h3>Introductions are not arriving</h3><p>You signed partners who promised warm introductions. A warm introduction is the output of a sales machine, not a substitute for one.</p></div>
+        <div class="step"><div class="num">04</div><h3>Hiring locally is slow and expensive</h3><p>A European SDR team takes six months to recruit and costs six figures before the first meeting is booked.</p></div>
+        <div class="step"><div class="num">05</div><h3>Your ad spend is priced for the US</h3><p>You are paying eight to twelve dollars a click at home for keywords that cost one and a half to three euros in France.</p></div>
+        <div class="step"><div class="num">06</div><h3>You want proof before you commit</h3><p>Ninety days, a fixed budget, an open dashboard and a committed number of meetings. Then you decide.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>The engine.</h2>
+        <p>Five components, run by one team, reported in one dashboard. Nothing is subcontracted to a black box.</p>
+      </div>
+      <div class="infra reveal">
+        <div class="infra-card">
+          <div class="k">01 · Targeting</div>
+          <h3>An ideal customer profile, then a real file</h3>
+          <p>A ninety-minute strategy session defines the segments and the ideal customer profile. We then source decision-maker files with direct mobile numbers, enrich them, validate them and deduplicate against your existing pipeline so we never call an account you already own.</p>
+        </div>
+        <div class="infra-card">
+          <div class="k">02 · Outbound</div>
+          <h3>An automatic dialer and a full-time team</h3>
+          <p>The dialer places the calls and connects an operator only when a human picks up, which removes the dead time that makes ordinary cold calling uneconomic. Our teams sit in France and Madagascar, francophone natively, with local-language operators added for Turkey and the Gulf.</p>
+        </div>
+        <div class="infra-card">
+          <div class="k">03 · Paid search</div>
+          <h3>Google Ads at European prices</h3>
+          <p>The same enterprise AI keywords cost roughly four times less per click in France and continental Europe than in the United States. The same media budget buys four times the reach. Every inbound lead is called back by the same team within minutes, which is where the highest conversion sits.</p>
+        </div>
+        <div class="infra-card">
+          <div class="k">04 · Same-day proposals</div>
+          <h3>The call becomes a costed offer</h3>
+          <p>Calls are recorded and transcribed. Each qualified conversation automatically produces not a meeting note but a costed written proposal, built from what the prospect actually said, and sent the same day while the conversation is still warm.</p>
+        </div>
+        <div class="infra-card">
+          <div class="k">05 · Conversion</div>
+          <h3>Phone, then demo, then room</h3>
+          <p>Phone meetings escalate to video demonstrations, then to physical meetings, then to IA Afterwork, the monthly Paris gathering of around 120 AI decision-makers we co-organise. A dedicated edition can be staged for your brand.</p>
+        </div>
+        <div class="infra-card">
+          <div class="k">06 · Reporting</div>
+          <h3>A weekly report and a live dashboard</h3>
+          <p>A written report every Friday. A thirty-minute strategy review every month. A dashboard open from day one showing calls placed, connection rate, meetings booked, ad spend, cost per lead, pipeline value and closed revenue. You keep full access to your own ad accounts throughout.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band deep">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>What we commit to over ninety days.</h2>
+        <p>Most agencies in this market sell an obligation of means and stop there. We commit to the volume of work and to a floor on qualified meetings.</p>
+      </div>
+      <div class="rounds reveal">
+        <div class="round open">
+          <div class="status">Committed</div>
+          <h3>The work</h3>
+          <div class="sub">Contractual volume, delivered or made good</div>
+          <ul class="terms">
+            <li><span>Production days, full-time operators</span><span>50</span></li>
+            <li><span>Prospects dialled per half-day session</span><span>50</span></li>
+            <li><span>Prospects dialled in total</span><span>5,000</span></li>
+            <li><span>Google Ads clicks</span><span>≈ 4,000</span></li>
+            <li><span>Weekly written reports</span><span>13</span></li>
+            <li><span>Monthly strategy reviews</span><span>3</span></li>
+          </ul>
+          <p class="use">If the committed volume is not delivered inside ninety days, we continue at our own cost until it is.</p>
+        </div>
+        <div class="round open">
+          <div class="status">Committed floor</div>
+          <h3>The meetings</h3>
+          <div class="sub">Qualified, with a named decision-maker</div>
+          <ul class="terms">
+            <li><span>Target per production day</span><span>4</span></li>
+            <li><span>Target over the quarter</span><span>150 – 200</span></li>
+            <li><span>Contractual floor</span><span class="big">120</span></li>
+            <li><span>Inbound leads from paid search</span><span>≈ 100</span></li>
+            <li><span>First meeting</span><span>within 14 days</span></li>
+          </ul>
+          <p class="use">Below 120 qualified meetings at day 90, we run additional sessions at our own cost until the floor is reached. A meeting counts only if the decision-maker attends and the qualification criteria agreed at kick-off are met.</p>
+        </div>
+      </div>
+      <p class="disclaimer">Revenue outcomes depend on your offer, your pricing and your closing process, and are therefore modelled rather than guaranteed. The volume of work and the meeting floor above are contractual.</p>
+    </div>
+  </section>
+
+  <section class="band" id="numbers">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Fifty thousand euros, and what it becomes.</h2>
+        <p>Eighty percent of the budget goes into human calling time, twenty percent into media. Media is passed through at cost with full account access.</p>
+      </div>
+      <div class="phases reveal">
+        <div class="phase">
+          <div class="p">Allocation</div>
+          <h3>€40,000 outbound · €10,000 media</h3>
+          <p>Fifty production days at 800 euros a day covering the operators, the dialer, the data sourcing and the CRM. Ten thousand euros of Google Ads media, landing pages and tracking, buying around four thousand clicks at European prices. Billed in three monthly instalments.</p>
+        </div>
+        <div class="phase">
+          <div class="p">Pipeline created</div>
+          <h3>230 to 320 opportunities</h3>
+          <p>150 to 200 qualified outbound meetings plus roughly 100 inbound leads, all called back by the same team. The pipeline built during the quarter does not expire at day 90.</p>
+        </div>
+      </div>
+
+      <div class="sec-head reveal" style="margin-top:56px">
+        <h2>Two worked examples.</h2>
+        <p>Same engine, same budget, two different products. Replace the contract value with your own and the arithmetic follows.</p>
+      </div>
+      <div class="rounds reveal">
+        <div class="round planned">
+          <div class="status">Example A · Enterprise AI platform</div>
+          <h3>€25,000 ACV</h3>
+          <div class="sub">A US AI workspace platform entering Europe, Turkey and the Gulf</div>
+          <ul class="terms">
+            <li><span>Conservative · 230 opps at 4%</span><span>9 accounts · €225K ARR</span></li>
+            <li><span>Central · 275 opps at 6%</span><span>16 accounts · €400K ARR</span></li>
+            <li><span>Upside · 320 opps at 8%</span><span>26 accounts · €650K ARR</span></li>
+            <li><span>Central return on €50K</span><span class="big">8x, recurring</span></li>
+          </ul>
+          <p class="use">Payback sits inside the ninety-day pilot in the central case. The revenue recurs; the pilot cost does not.</p>
+        </div>
+        <div class="round planned">
+          <div class="status">Example B · Sovereign AI training &amp; hosting</div>
+          <h3>€8,000 ACV</h3>
+          <div class="sub">Publicly funded AI training converting into data centre colocation</div>
+          <ul class="terms">
+            <li><span>Conservative · 230 opps at 6%</span><span>14 clients · €112K</span></li>
+            <li><span>Central · 275 opps at 9%</span><span>25 clients · €200K</span></li>
+            <li><span>Upside · 320 opps at 12%</span><span>38 clients · €304K</span></li>
+            <li><span>Central cost of acquisition</span><span class="big">€2,000 per client</span></li>
+          </ul>
+          <p class="use">Two thousand euros of acquisition cost against an eight thousand euro recurring contract, and each trained client becomes a candidate tenant for sovereign AI hosting.</p>
+        </div>
+      </div>
+      <p class="disclaimer">Illustrative models based on stated contract values and close rates. Actual results depend on your offer, pricing, market and sales process. Not a forecast or a guarantee of revenue.</p>
+    </div>
+  </section>
+
+  <section class="band deep">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>Questions we always get.</h2>
+      </div>
+      <div class="infra reveal">
+        <div class="infra-card">
+          <div class="k">Qualification</div>
+          <h3>What counts as a qualified meeting?</h3>
+          <p>Criteria are agreed in writing at kick-off: company size, sector, seniority of the contact, expressed need and timeline. A meeting counts only if the named decision-maker attends. Nothing is counted retroactively or unilaterally.</p>
+        </div>
+        <div class="infra-card">
+          <div class="k">Transparency</div>
+          <h3>How do I know this is not a black box?</h3>
+          <p>You receive the calling schedule in advance, you keep full access to your own Google Ads accounts, and the dashboard is live from day one. Call recordings and transcripts are available on request, subject to GDPR.</p>
+        </div>
+        <div class="infra-card">
+          <div class="k">Compliance</div>
+          <h3>How do you handle GDPR?</h3>
+          <p>B2B prospecting on professional contact data, with lawful basis documented, opt-out honoured immediately and suppression lists maintained across campaigns. Consent and data-protection practices are verified before any campaign starts.</p>
+        </div>
+        <div class="infra-card">
+          <div class="k">Speed</div>
+          <h3>When do the first results land?</h3>
+          <p>First calls within ten working days of signature, first meetings within fourteen. Cold calling is immediate by nature: there is no ramp-up curve to wait through, only a learning curve that improves the numbers month over month.</p>
+        </div>
+        <div class="infra-card">
+          <div class="k">Territories</div>
+          <h3>Which markets do you cover?</h3>
+          <p>France and francophone Europe from day one. Turkey and the GCC from month two, with local-language operators added to the same infrastructure and the same dashboard. The engine is territory-agnostic; only the staff and the ad copy change.</p>
+        </div>
+        <div class="infra-card">
+          <div class="k">After ninety days</div>
+          <h3>What happens at day 90?</h3>
+          <p>A full review against the committed volumes and the meeting floor, with the complete dataset. You renew, scale up, or stop. There is no automatic renewal and no lock-in beyond the ninety days.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>First step: a ninety-minute strategy session.</h2>
+        <p>We map your segments, size the addressable file, define the qualification criteria and hand you the plan. It costs nothing and you keep the plan whether or not we work together.</p>
+      </div>
+      <div class="cta-row reveal">
+        <a class="btn btn-primary" href="https://wa.me/33783609020" target="_blank" rel="noopener">Book the session →</a>
+        <a class="btn btn-ghost" href="https://businessdigitalai.com/business-plan">See how we use this engine on our own business</a>
+      </div>
+      <p class="partner-note">Run by BusinessDigital AI. Twenty-five years in European digital marketing, including fifteen as Digital Marketing Director at BT Group. Teaching at HEC Paris, École 42 and Google. Qualiopi-certified training organisation, registered partner of Anthropic's Claude Partner Network, operating 82 Google Ads accounts across a network of more than 119 domains, and co-organiser of IA Afterwork Paris.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="brand" href="https://businessdigitalai.com/"><span class="stars">★★★</span> BusinessDigital AI</a>
+        <p>Trusted AI for European enterprise. Official Claude (Anthropic) Partner. AI Business School in France and Madagascar. Qualiopi certified (RNQ-25/10/2579). 54 avenue Hoche, 75008 Paris, France.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <div class="h">Company</div>
+          <a href="https://businessdigitalai.com/investors">Investors</a>
+          <a href="https://businessdigitalai.com/enterprise">Enterprise</a>
+          <a href="https://businessdigitalai.com/about">About</a>
+        </div>
+        <div class="foot-col">
+          <div class="h">Partners</div>
+          <a href="https://compagniedephalsbourgia.com" target="_blank" rel="noopener">Compagnie de Phalsbourg</a>
+          <a href="https://businessdigital.fr" target="_blank" rel="noopener">BusinessDigital.fr</a>
+          <a href="https://wa.me/33783609020" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 BusinessDigital AI. All rights reserved.</span>
+      <span>Data sovereign · GDPR compliant · EU AI Act ready</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(function(e){e.classList.add('in')}); return; }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, {threshold:0.12, rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(e){ io.observe(e); });
+  })();
+</script>
+</body>
+</html>
