@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Business Plan — BusinessDigital AI</title>
 <meta name="description" content="Series A open. One company owns the whole chain: state-funded training that sources talent and enterprise clients, an AI start-up studio, GLM 5.2 on owned silicon, and sovereign AI data centers on French soil." />
-<link rel="canonical" href="https://businessdigitalai.com/pitch-deck" />
-<meta property="og:title" content="Investor Pitch — BusinessDigital AI" />
-<meta property="og:description" content="We own the talent, the software and the servers. Publicly funded training fills sovereign AI data centers we own." />
-<meta property="og:url" content="https://businessdigitalai.com/pitch-deck" />
+<link rel="canonical" href="https://businessdigitalai.com/business-plan" />
+<meta property="og:title" content="Business Plan — BusinessDigital AI" />
+<meta property="og:description" content="How a sovereign AI data centre is built, what a megawatt costs, and how to invest upstream of Europe's AI compute build-out — alongside publicly funded training that fills the capacity." />
+<meta property="og:url" content="https://businessdigitalai.com/business-plan" />
 <meta property="og:type" content="website" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -411,6 +411,60 @@
         <div class="stat"><div class="n">≈ 0.4%</div><div class="l">Share of the 240 MW site our first megawatt represents. The runway above us is the point.</div></div>
       </div>
       <p class="disclaimer">Capacity, yield and IRR figures are indicative, based on market reference pricing, and subject to hardware costs, energy contracts, construction schedule and due diligence. They are not a forecast or a guarantee of returns.</p>
+    </div>
+  </section>
+
+  <section class="band" id="build">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2>How a sovereign AI data centre is actually built.</h2>
+        <p>Before the economics make sense, the machine has to be understood. An AI data centre is not a warehouse of servers. It is a power plant with computers attached, and almost everything hard about it is electrical and thermal. Here is the whole chain, in plain terms, with the market references we build against.</p>
+      </div>
+
+      <div class="steps reveal">
+        <div class="step">
+          <div class="num">01</div>
+          <h3>Power and land come first</h3>
+          <p>Capacity is measured in megawatts of electricity delivered to the chips, not in square metres. A site is defined by its grid connection: a high-voltage feed from the transmission network, an on-site substation, transformers, backup generation and battery protection against micro-cuts. Land is the cheap part. The scarce part is a firm connection to the grid, which is why operators secure power years before they pour concrete.</p>
+        </div>
+        <div class="step">
+          <div class="num">02</div>
+          <h3>The machines are racks, not servers</h3>
+          <p>The unit of AI compute is the rack. A modern accelerator rack — an <a href="https://www.nvidia.com/en-us/data-center/gb200-nvl72/" target="_blank" rel="noopener">Nvidia GB200 NVL72</a>, seventy-two GPUs wired by NVLink to behave as one — draws around 120 kilowatts, against five to ten for a traditional server rack. Racks are then linked by high-speed InfiniBand or Ethernet into clusters of thousands to hundreds of thousands of GPUs. A single high-density GB300 rack runs between three and four million dollars, which is why the hardware, not the building, dominates the cost.</p>
+        </div>
+        <div class="step">
+          <div class="num">03</div>
+          <h3>Cooling and network make it work</h3>
+          <p>At 30 to 130 kilowatts per rack, air cooling gives out — it caps physically around forty kilowatts. Above that, direct-to-chip liquid cooling stops being an option and becomes the design. Coolant is pumped to the chips, heat is carried out to heat-pump centres and, on a well-built site, exported rather than vented. Get the power, cooling and network fabric right and the GPUs are the easy part; get them wrong and no amount of silicon helps.</p>
+        </div>
+      </div>
+
+      <div class="infra reveal" style="margin-top:22px">
+        <div class="infra-card">
+          <div class="k">Where the money goes</div>
+          <h3>≈ 15 to 20 million dollars per AI-ready megawatt</h3>
+          <p>Sector references put the shell of a data centre at roughly fifteen million dollars per megawatt — <a href="https://www.goldmansachs.com/insights/articles/tracking-trillions-the-assumptions-shaping-scale-of-the-ai-build-out" target="_blank" rel="noopener">Goldman Sachs models an eleven-to-nineteen-million range</a> — and an AI-ready megawatt at fifteen to twenty once accelerators, liquid cooling and high-voltage distribution are counted. Compute hardware is around sixty percent of the bill, electrical and cooling infrastructure a quarter, land and construction the smallest line. It is the reverse of a traditional data centre.</p>
+        </div>
+        <div class="infra-card">
+          <div class="k">How long it takes</div>
+          <h3>The grid is the long pole, not the concrete</h3>
+          <p>In France, <a href="https://www.rte-france.com/bases-electricite/consommation-electricite/essor-data-centers-france" target="_blank" rel="noopener">RTE</a> puts a grid connection above ten megawatts at eighteen to thirty-six months, and real-world delays run from two to seven years by region. A full hyperscale site now takes eighteen to twenty-four months to build. Transformers, the substation and the connection queue set the schedule — which is exactly why capacity secured early, in tranches, is worth more than capacity promised late.</p>
+        </div>
+      </div>
+
+      <div class="sec-head reveal" style="margin-top:56px">
+        <h2>What the rest of the market is spending.</h2>
+        <p>The scale of the build-out is the backdrop to this plan. Figures below are as officially announced or publicly reported, cited for orientation.</p>
+      </div>
+      <div class="stat-row reveal">
+        <div class="stat"><div class="n">$500B</div><div class="l">Announced for the <a href="https://openai.com/index/announcing-the-stargate-project/" target="_blank" rel="noopener" style="color:var(--gold)">Stargate</a> project by OpenAI, Oracle and SoftBank over four years — the single largest compute programme on record.</div></div>
+        <div class="stat"><div class="n">≈ 555k</div><div class="l">Nvidia GPUs targeted at xAI's Colossus 2 site alone, on a path toward one to two gigawatts of capacity. Owning compute at this scale is now a sovereignty question, not a purchasing one.</div></div>
+        <div class="stat"><div class="n">≈ 18 GW</div><div class="l">Grid capacity already reserved with RTE across roughly eighty French data-centre projects in 2026, most sized at 100 to 200 MW. The build-out is landing in France.</div></div>
+      </div>
+      <div class="flywheel reveal">
+        <p>France is not watching this from the sidelines. Mistral has committed to <a href="https://mistral.ai/products/compute/" target="_blank" rel="noopener">200 MW of sovereign capacity by 2027</a>, and a <a href="https://polytechnique.edu/en/press-room/press-releases/mgx-bpifrance-mistral-ai-and-nvidia-launch-joint-venture-build-europes-largest-ai-campus-france" target="_blank" rel="noopener">joint venture of MGX, Bpifrance, Mistral and Nvidia</a> is building what it calls Europe's largest AI campus in the Paris region, reportedly aiming at 1.4 GW. You cannot buy your way into Stargate, and you cannot write the cheque for a gigawatt. <em>What you can do is take a megawatt of the same French build-out</em>, at the entry point, on an asset that already has its site, its developer and its 2027 delivery date documented in public records above.</p>
+      </div>
+      <p class="disclaimer">Cost and capacity figures are market references, not our quotations: capex per megawatt from Goldman Sachs and specialist sector analysis; rack power and cooling thresholds from Nvidia specifications and industry data; French grid timelines and the 18 GW reserved from RTE. Third-party project figures are as officially announced (Stargate, Mistral's 200 MW 2027 target, the MGX–Bpifrance–Mistral–Nvidia joint venture) or, where marked "reported", as carried by the financial and technology press pending an official filing. They describe the market, not a commitment to BusinessDigital AI.</p>
     </div>
   </section>
 
